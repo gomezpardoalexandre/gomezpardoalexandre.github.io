@@ -1,0 +1,128 @@
+#dessin img{
+	height: 40%;
+}
+#red #ap, .bio p{
+	font-size:15px;
+}
+p{
+	font-size:15px;
+}
+#blanc section{
+	margin-top:26.5vh;
+}
+/*p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}$/
+/*---- placement ----*/
+/*	display:block;
+	margin:0;
+	padding:0;
+}
+#bleu{
+	background-color:#044fef;
+	height:25vh;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#bleu img{
+	width:40%;
+}
+#blanc{
+	background-color: white;
+	height:25vh;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#blanc img{
+	height:50px;
+}
+#spotify{
+	margin-left:50px;
+}
+#dessin{
+	height:25vh;
+	display:flex;
+	flex-wrap: wrap;
+}
+#illu{
+	display:none;
+}
+#dessin img{
+	height:100%;
+}
+#jaune1,#jaune2{
+	all:unset;
+	position: relative;
+	height: 25vh;
+	width:50%;
+	background-color: #ffff00;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#red{
+	height: 25vh;
+	width:100%;
+	background-color: #fc5c55;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#red .bio{
+	display: none;
+}
+#red #ap{
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #ffff00;
+}
+#jaune1 #mail{
+	display: none;
+}
+#jaune1 #join, #jaune2 p{
+	display: block;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:500;
+	color:#fc5c55;
+}
+button{
+	display: none;
+}
+#red:hover .bio{
+	display:block;
+}
+#red:hover #ap{
+	display: none;
+}
+.bio p{
+	font-size: 16px;
+	color:white;
+}
+#jaune1:hover #join, #jaune2:hover p{
+	display: none;
+}
+#jaune1:hover #mail{
+	display: block;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color:#044fef;
+}
+#jaune2:hover a{
+	display: block;
+}
+#jaune2 a{
+	display: none;
+}
+#jaune2 img{
+	display: block;
+	height: 40px;
+	width: auto;
+}*/
