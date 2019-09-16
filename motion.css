@@ -47,14 +47,13 @@ section{
 h1, h2, h3, p{
 	margin:0;
 }
-video{
-	width:100%;
+.video img{
 	vertical-align: bottom;
 }
 .video img{
 	width:100%;
 	height:100%;
-	object-fit: cover;
+	font-size: 0px;
 }
 .jaune{
 	width: 100%;
@@ -92,7 +91,7 @@ video{
 	padding-top:9%;
 }
 .bleu{
-	height: 40%;
+	height: 50%;
 	text-align: center;
 	justify-content: center;
 }
@@ -101,31 +100,45 @@ video{
 	flex-wrap: wrap;
 	align-items: center;
 }
+
 ul{
+	padding:0;
 	list-style: none;
-	margin:0;
+	margin:0 auto;
 	text-align: left;
-	padding-top:13%;
+	display:flex;
+	flex-direction: column;
+	padding-top:10%;
 }
 .bleu ul p{
 	color: white;
 	margin-top:10px;
 	font-size: 30px;
 }
-.date{
+.part2 ul{
+	padding-left: 40px;
+} 
+/*.date{
 	height:10%;
+	position: relative;
 	padding-top:0%;
+	margin:0;
 	background-color: #044fef;
 }
 #inverse{
 	text-align: right;
 }
 .date h3{
+	position: absolute;
+	bottom:0;
+	right:0;
+	font-weight: 300;
 	color:#fc5c55;
-	font-size: 50px;
-	font-weight: 500;
-	padding-top: 3%;
 }
+.part2 .date h3, .part4 .date h3{	
+	left: 0;
+}*/
+
 .bleu a{
 	color:white;
 	border: solid white 2px;
@@ -159,4 +172,5 @@ ul{
 }
 .part3 ul, .part4 ul{
 	text-align: center;
+
 }

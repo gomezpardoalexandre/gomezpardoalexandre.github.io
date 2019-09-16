@@ -1,0 +1,7 @@
+main{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	margin-top: 2vh; /* poussé de la moitié de hauteur de viewport */
+	transform: translateY(0%);
+}
