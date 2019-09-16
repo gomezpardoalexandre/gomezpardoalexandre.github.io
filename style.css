@@ -167,6 +167,10 @@ button{
 	font-weight: 500;
 	font-size:20px;
 }
+@media screen and (max-height: 1000px){
+	.menulinks a{
+		font-size:30px;}
+}	
 .menulinks a:hover{
 	color:#ffff00;
 	font-weight: 400;
