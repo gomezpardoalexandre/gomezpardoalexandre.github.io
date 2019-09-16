@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Alex</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="stylehaut.css" media="screen and (min-height: 1388px)">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div id="blanc">
+		<section>
+		<a href="https://www.instagram.com/alex_graphisme/?hl=fr" target="_blank"><img src="image/instagram.png" alt="instagram"></a>
+		<a id="spotify" href="https://open.spotify.com/user/j17b7dtjv0cuvdxz4wywg16q9?si=j0Jco8EsTeGPm9uNFqob_w" target="_blank"><img src="image/spotify.jpg" alt="spotify"></a>
+		</section>
+	</div>
+	<div id="red">
+		<p id="ap">à propos</p>
+		<div class="bio">
+		<img src="">
+		<p>Étudiant en Bachelor Design Interactif aux Gobelins</p>
+		</div>
+	</div>
+	<div id="dessin">
+		<img src="image/dessin.png" alt="">
+		<div id="jaune1">
+			<p id="join">joindre</p>
+			<p id="mail">alexandre.gomezpardo@gmail.com</p>
+		</div>
+		<div id="jaune2">
+			<p>CV</p>
+			<a href=""><img src="image/download.png" alt="download"></a>
+		</div>
+	</div>
+	<div id="bleu">
+		<img id="logo" src="image/logobon.png" alt="logo">
+	</div>
+	<div class="menu">
+			<button id="menuham">
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+				  <path
+				        class="line top"
+				        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+				  <path
+				        class="line middle"
+				        d="m 30,50 h 40" />
+				  <path
+				        class="line bottom"
+				        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
+			</button>
+		</div>
+		</div>
+		<div class="menulinks">
+			<nav>
+				<ul>
+					<li><a href="design.html">Design</a></li>
+					<li><a href="print.html">Print</a></li>
+					<li><a href="motion.html">Motion</a></li>
+					<li><a href="dessin.html">Dessin</a></li>
+					<li><a href="photo.html">Photos</a></li>
+				</ul>
+			</nav>
+		</div>	
+		<script>
+ $( "#menuham" ).click(function() {
+  $( ".menulinks" ).slideToggle( "slow" );
+});
+ $(document).ready(function(){
+ 	$(".menulinks").hide();
+ });
+	</script>
+</body>
+</html>

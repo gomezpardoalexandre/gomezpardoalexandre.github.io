@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alex's dessin</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="photo.css">
+	<link rel="stylesheet" href="dessin.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<main>
+	<div class="logo">
+		<a href="index.html"><img src="logoblack.png" alt="logo"></a>
+	</div>				
+<section class="gallery">
+	<div class="presentation">
+	<div class="row">
+		<ul>
+			<a href="#" class="close"></a>
+			<li>
+				<a href="#item01">
+					<img src="dessin/illustration2_motion.png" alt="">
+				</a>
+			</li>
+
+			<li>
+				<a href="#item02">
+					<img src="dessin/illustration2-motion.png" alt="">
+				</a>
+			</li>
+
+			<li>
+				<a href="#item03">
+					<img src="dessin/jackfrost.jpg" alt="">
+				</a>
+			</li>
+				<li><a href="#item1"><img src="dessin/Plan de travail 1-100.jpg" alt=""></a></li>
+				<li><a href="#item2"><img src="dessin/oupabo1.jpg" alt=""></a></li>
+				<li><a href="#item3"><img src="dessin/oupabo2.jpg" alt=""></a></li>
+				<li><a href="#item4"><img src="dessin/oupabo3.jpg" alt=""></a></li>
+				<li><a href="#item5"><img src="dessin/run2.png" alt=""></a></li>
+				<li><a href="#item6"><img src="dessin/jumbasket.png" alt=""></a></li>
+				<li><a href="#item7"><img src="dessin/basket.png" alt=""></a></li>
+		</ul>
+	</div> <!-- / row -->
+</div>
+
+<!-- ---------------------------------- -->
+
+<!-- Item 01 -->
+	<div id="item01" class="port">
+	
+		<div class="row">
+				<img src="dessin/illustration2_motion.png" alt="">
+			</div>
+		</div> <!-- / row -->
+
+	</div> <!-- / fin Item 01 -->
+
+<!-- Item 02 -->
+	<div id="item02" class="port">
+	
+		<div class="row">
+			<img src="dessin/illustration2-motion.png" alt="">
+		</div> <!-- / row -->
+
+	</div> <!-- / fin Item 02 -->
+
+<!-- Item 03 -->
+	<div id="item03" class="port">
+	
+		<div class="row">
+				<img src="dessin/jackfrost.jpg" alt="">
+			</div><!-- / row -->
+
+	</div><!-- / fin Item 03 -->
+	<div id="item1" class="port">
+		<div class="row"><img src="dessin/Plan de travail 1-100.jpg" alt=""></div>
+	</div>
+	<div id="item2" class="port">
+		<div class="row"><img src="dessin/oupabo1.jpg" alt=""></div>
+	</div>
+	<div id="item3" class="port">
+		<div class="row"><img src="dessin/oupabo2.jpg" alt=""></div>
+	</div>
+	<div id="item4" class="port">
+		<div class="row"><img src="dessin/oupabo3.jpg" alt=""></div>
+	</div>
+	<div id="item5" class="port">
+		<div class="row"><img src="dessin/run2.png" alt=""></div>
+	</div>
+	<div id="item6" class="port">
+		<div class="row"><img src="dessin/jumbasket.png" alt=""></div>
+	</div>
+	<div id="item7" class="port">
+		<div class="row"><img src="dessin/basket.png" alt=""></div>
+	</div>
+
+</section> <!-- / projects -->
+</main>
+<script>
+	 // portfolio
+ $('.gallery ul li a').click(function() {
+     var itemID = $(this).attr('href');
+     $('.gallery ul').addClass('item_open');
+     $(itemID).addClass('item_open');
+     return false;
+ });
+ $('.close').click(function() {
+     $('.port, .gallery ul').removeClass('item_open');
+     return false;
+     $(window).scroll(30)
+ });
+
+ $(".gallery ul li a").click(function() {
+     $('html, body').animate({
+         scrollTop: parseInt($("#top").offset().top)
+     }, 400);
+ });
+ // scroll to top
+  $('img').click(function() {
+      $(window).scrollTop(0);
+});
+</script>
+
+</body>
+</html>

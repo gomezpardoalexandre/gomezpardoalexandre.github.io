@@ -1,0 +1,9 @@
+main{
+  margin-left: 3%;
+  margin-right: 3%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}

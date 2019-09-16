@@ -1,0 +1,162 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+/*----- Bloc de couleur --*/
+.bleu{
+	background: #044fef;
+}
+.jaune{
+	background-color: #ffff00;
+}
+.rouge{
+	background-color: #fc5c55;
+}
+/* ---- logo -----*/
+.logo img{
+  width: 12%;
+}
+.logo{
+	height: 70px;
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom:0px;
+	display:flex;
+	align-items:center;
+}
+.contenu{
+	width: 90%;
+}
+main{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width:100%;
+}
+/* --- section 1 ---*/
+section{
+	display:flex;
+	flex-wrap: wrap;
+	width:100%;
+}
+.left{
+	width:50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+h1, h2, h3, p{
+	margin:0;
+}
+video{
+	width:100%;
+	vertical-align: bottom;
+}
+.video img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.jaune{
+	width: 100%;
+}
+.right{
+	width:50%;
+}
+.white{
+	height: 25%;
+	text-align: center;
+	padding-left: 3%;
+}
+.white h1{
+	padding-top:5%;
+	font-weight: 800;
+	font-size: 150px;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 15px;
+	color: #044fef;
+}
+.part2 .white h1,.part3 .white h1, .part4 .white h1{
+	padding-top:2%;
+}
+
+.rouge{
+	height:25%;
+	text-align: center;
+}
+.rouge p{
+	display:block;
+	font-size: 30px;
+	color:white;
+	font-weight: 300;
+	padding-top:9%;
+}
+.bleu{
+	height: 40%;
+	text-align: center;
+	justify-content: center;
+}
+#link{
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+ul{
+	list-style: none;
+	margin:0;
+	text-align: left;
+	padding-top:13%;
+}
+.bleu ul p{
+	color: white;
+	margin-top:10px;
+	font-size: 30px;
+}
+.date{
+	height:10%;
+	padding-top:0%;
+	background-color: #044fef;
+}
+#inverse{
+	text-align: right;
+}
+.date h3{
+	color:#fc5c55;
+	font-size: 50px;
+	font-weight: 500;
+	padding-top: 3%;
+}
+.bleu a{
+	color:white;
+	border: solid white 2px;
+	padding:20px;
+	border-radius: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 300;
+}
+.jaune{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.jaune p{
+	color:#fc5c55;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top:20px;
+	width:90%;
+	margin:0 auto;
+}
+.jaune h2{
+	color:#fc5c55;
+	font-size:30px;
+	letter-spacing: 4px;
+}
+/* ---- section flip ----*/
+.part2, .part4 {
+	flex-direction: row-reverse;
+}
+.part3 ul, .part4 ul{
+	text-align: center;
+}
