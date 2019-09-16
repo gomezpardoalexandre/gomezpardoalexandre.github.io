@@ -165,12 +165,8 @@ button{
 	color:white;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
-	font-size:20px;
+	font-size:15px;
 }
-@media screen and (max-height: 1000px){
-	.menulinks a{
-		font-size:30px;}
-}	
 .menulinks a:hover{
 	color:#ffff00;
 	font-weight: 400;
