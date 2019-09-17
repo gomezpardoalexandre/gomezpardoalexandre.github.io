@@ -20,9 +20,23 @@ body{
 	height: 70px;
 	width: 100%;
 	margin-left: 5%;
+	margin-right:5%;
 	margin-bottom:0px;
 	display:flex;
+	justify-content: space-between;
 	align-items:center;
+}
+#back{
+	text-decoration: none;
+	background:#044fef ;
+	padding: 14px;
+	color: white;
+	border-radius: 40px;
+	font-size: 15px;
+}
+#back:hover{
+	background: #fc5c55;
+	color:#ffff00;
 }
 .contenu{
 	width: 90%;
@@ -81,14 +95,15 @@ h1, h2, h3, p{
 
 .rouge{
 	height:25%;
-	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
 }
 .rouge p{
 	display:block;
 	font-size: 30px;
 	color:white;
 	font-weight: 300;
-	padding-top:9%;
 }
 .bleu{
 	height: 50%;
@@ -143,7 +158,7 @@ ul{
 	color:white;
 	border: solid white 2px;
 	padding:20px;
-	border-radius: 30px;
+	border-radius: 20px;
 	font-size: 20px;
 	text-decoration: none;
 	font-weight: 300;
