@@ -311,7 +311,9 @@ a{
 }
 #icon p{
 	font-size: 15px;
+	font-size: 1.1vw;
 	color:white;
+	font-family: 'Silka-light';
 }
 /*--------- Social ---------*/
 .social {
