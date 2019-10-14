@@ -1,6 +1,8 @@
 @font-face {
-	font-family: Silka;
-	src:url(../font/Silka Regular.otf);
+	font-family: 'Silka Light';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Silka Light'), url('silka-light.woff') format('woff');
 }
 /*reset*/
 
@@ -26,6 +28,10 @@ a{
 	color:black;
 }
 /*---------- Header : Menu --------*/
+ul :nth-child(5){
+	text-decoration-line: line-through;
+	opacity: 0.5;
+}
 .menu{
 	margin:0;
 	margin-top:55px;
