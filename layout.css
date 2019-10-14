@@ -154,6 +154,9 @@ ul{
 	font-size: 3vw;
 	text-decoration: underline;
 }
+.menu a{
+	color: black;
+}
 .menu a:hover{
 	color:#0F29BF;
 }
