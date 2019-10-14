@@ -160,6 +160,9 @@ ul{
 .menu a:hover{
 	color:#0F29BF;
 }
+.menu a:visited{
+	color:#0F29BF;
+}
 /* --------------- corps --------------- */
 .corps{
 	display: flex;
