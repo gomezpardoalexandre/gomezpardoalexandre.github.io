@@ -35,3 +35,6 @@ main{
 .bande{
 	margin-top:30px;
 }
+.annotation, .annotationleft{
+	visibility: hidden;
+}
