@@ -6,18 +6,26 @@ h3{
 }
 .diapo{
 	display: none;
-	max-height:60vw;
+	max-height:63vw;
 	width:95.2%;
 	margin-right: 0;
 	margin-left: auto;
 	overflow-y: scroll;
+}
+.description svg{
+	display: block;
+	margin:0 auto;
+	width: 20%;
+}
+.app .description svg{
+	width:15%;
 }
 #menu{
 	display: none;
 }
 .diapoleft{
 	display: none;
-	max-height:60vw;
+	max-height:63vw;
 	width:95.2%;
 	margin-right: auto;
 	margin-left: 0;
