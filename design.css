@@ -247,9 +247,48 @@ span{
 	margin-left: 8%;
 }
 /* ------ plus scroll image ------*/
+.annotation{
+	width:31%;
+	height:46vw;
+	position: absolute;
+	text-align: right;
+	display: none;
+}
+.annotationleft{
+	width:31%;
+	height:46vw;
+	position: absolute;
+	margin-left: 69%;
+	display: none;
+}
+.annotation p,.annotationleft p{
+	margin:0;
+	margin-right: 10px;
+	margin-left:10px;
+	font-size: 20px;
+}
+.scroll{
+	writing-mode: vertical-rl;
+	text-orientation: sideways-left;
+	margin: auto 0;
+	height: 46vw;
+	text-align: center;
+}
+.b {
+	color:#0F29BF;
+}
+.j{
+	color:black;
+}
+.r{
+	color:#E74F59;
+}
+.v{
+	color:#094349;
+}
 .diapo{
 	display: none;
-	max-height:41vw;
+	max-height:46vw;
 	width:69%;
 	margin-right: 0;
 	margin-left: auto;
@@ -257,7 +296,7 @@ span{
 }
 .diapoleft{
 	display: none;
-	max-height:41vw;
+	max-height:46vw;
 	width:69%;
 	margin-right: auto;
 	margin-left: 0;
@@ -265,6 +304,15 @@ span{
 }
 .slider{
 	height: 100%;
+}
+.slider p{
+	margin-bottom:20px;
+	float:right;
+	color:white;
+	margin-right: 10px;
+}
+.jaune p{
+	color:black;
 }
 .sld{
 	margin: 20px 10px;
