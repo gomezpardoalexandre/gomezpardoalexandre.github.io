@@ -155,12 +155,9 @@ ul{
 	text-decoration: underline;
 }
 a{
-	color: black;
+	color:black;
 }
 .menu a:hover{
-	color:#0F29BF;
-}
-.menu a:visited{
 	color:#0F29BF;
 }
 /* --------------- corps --------------- */
@@ -274,47 +271,7 @@ a{
 #trois{
 	margin-bottom: 96px;
 }
-/* ----------- Tool Box ----------*/ 
-.toolbox{
-	position: relative;
-}
-#jaunebouton{
-	display: flex;
-	justify-content: center;
-}
-#jaunebouton svg {
-	position: absolute;
-}
-.trait{
-	background-color: #094349;
-	width:100%;
-	height: 1pt;
-}
-.box{
- margin-top:24px;
-}
-#rectanglevert{
-	display: none;
-	background-color: #094349;
-	height: 306px;
-}
-#icon{
-	margin: 0px 4.8%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-top: 75px;
-	text-align: center;
-}
-#icon img{
-	margin-top: 20px;
-}
-#icon p{
-	font-size: 15px;
-	font-size: 1.1vw;
-	color:white;
-	font-family: 'Silka-light';
-}
+
 /*--------- Social ---------*/
 .social {
 	margin: 0px 4.8%;
@@ -364,10 +321,4 @@ a{
 	top:25%;
 	z-index: 0;
 }
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
-{ @media {
-    /*
-      Define here the CSS styles applied only to Safari browsers
-      (any version and any device)
-     */
-}}
+
