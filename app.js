@@ -7,10 +7,10 @@ const flightPath = {
 	curviness: 0.1,
 	autoRotate: false,
 	values: [
-	{x: 0, y:hauteur/5.5}, 
-	{x:-largeur/2, y:hauteur/5.5},
-	{x:-largeur/2, y:hauteur+60},
-	{x:-largeur, y:hauteur+60},
+	{x: 0, y:hauteur/7}, 
+	{x:-largeur/2, y:hauteur/7},
+	{x:-largeur/2, y:hauteur/1.1},
+	{x:-largeur, y:hauteur/1.1},
 	{x:-largeur, y:hauteur+170}
 	]
 }
