@@ -1,0 +1,93 @@
+/* ---- header ---*/
+.header h3{
+    font-size: 4.2vw;
+}
+.header :nth-child(3){
+    display: none;
+}
+.header :nth-child(4){
+    display: block;
+}
+.header{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+/* ---- intro ----*/
+#titre h1{
+	letter-spacing: 0px;
+	float:left;
+}
+/*----- menu ---*/
+.menu{
+    margin: 30px 0 30px 0 ;
+}
+.menu a {
+    font-size: 5vw;
+}
+/*-----corps -----*/
+.corps #deco{
+	display: none;
+}
+.corps p{
+    width:100%;
+    font-size: 4vw;
+
+}
+.corps {
+    margin-top:30px;
+    margin-bottom: 60px;
+}
+/*--- social ----*/
+.social h1{
+    margin-top: 30px;
+    margin-bottom:20px;
+    font-size: 6vw;
+}
+#link{
+    margin:0;
+    justify-content: space-around;
+}
+#link svg{
+    width:7vw;
+}
+main{
+    margin-bottom: 30px;
+
+}
+/*--- parcours ---*/
+#un h2,#deux h2, #trois h2{
+    margin-bottom: 10px;
+    font-size: 3.5vw;
+    text-align: left;
+}
+#un p, #deux p, #trois p{
+    font-size: 3.5vw;
+}
+/*bloc1+3*/
+#un h2, #trois h2{
+ 
+    padding-left: 5%;
+}
+/*bloc2*/
+#deux #left{
+    order: 2;
+    width:60%;
+    height:10%;
+    padding-left: 3%;
+    display: none;
+}
+#deux #right{
+    order:3;
+    width:60%;
+    text-align: left;
+    padding-left: 3%;
+}
+#deux img{
+    margin:0;
+}
+#deux p{
+    margin-top: 0px;
+}
+#left p{
+    text-align: left;
+}

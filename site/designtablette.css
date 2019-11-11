@@ -1,0 +1,169 @@
+/*body{
+ 	background-color: red;
+}*/
+/* ---- Menu ---*/
+.menu ul{
+	font-size: 3vw;
+}
+.menu{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+h3{
+	letter-spacing:0;
+	font-size: 4vw;
+}
+/* ------ margin ------ */
+.description svg{
+	display: block;
+	margin:0 auto;
+	width: 20%;
+}
+.app .description svg{
+	width:15%;
+}
+#menu{
+	display: none;
+}
+.gallery{
+	margin-top:60px;
+}
+.contact{
+	margin-top: 60px;
+}
+.bande{
+	margin-top:30px;
+}
+/* ----- gallery ----*/
+.gallery{
+	margin-top: 30px;
+	padding-top: 0;
+}
+.flexbox{
+	margin-left: 2%;
+}
+.left .flexbox {
+	margin-right:2%;
+}
+span{
+	width:36%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.bande img{
+	width:auto;
+	height: 100%;
+	overflow: hidden;
+}
+.app img{
+	width: 17%;
+	height: 46%;
+}
+.app span{
+	display: flex;
+	align-items: center;
+	width:60%;
+	height: 100%;
+} 
+.app .flexbox{
+	height: 100%;
+	width:100%;
+	margin:0;
+}
+.app svg{
+	width:11%;
+}
+.bande video{
+	margin-bottom: 0%;
+	width:63%;
+	overflow: hidden;
+}
+.td .span{
+	height: 100%;
+}
+.ar img{
+	width: 62%;
+}
+/* ----- contact ----*/
+.contact h2{
+	margin-bottom: 30px;
+}
+.link a{
+	font-size: 2.5vw;
+}
+.social svg {
+	width:4vw;
+}
+.social {
+	margin-bottom: 60px;
+}
+/*------- projet -----*/
+.slider{
+	height: 100%;
+	margin: 10px 4.8% 30px 4.8%;
+}
+.sld img{
+	width:60%;
+}
+.droite img{
+	width:65%;
+}
+.bloc1,.bloc2,.bloc3,.bloc4,.bloc5{
+	display:none;
+}
+.sld{
+	margin:25px;
+	align-items: center;
+}
+/*----- .liste mobile ----*/
+.liste{
+	display:none;
+}
+.liste_mobile{
+	display: block;
+	margin-top:30px;
+	margin-left: 4.8%;
+	margin-right: 4.8%;
+	width:90.6%;
+	height:80px;
+	overflow-x:scroll;
+}
+.scroll{
+	display: flex;
+	flex-wrap: wrap;
+	width:2000px;
+}
+.bouton{
+	width:9%;
+	height:60px;
+	margin-left:20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+	box-shadow: 2px 3px 5px rgba(122,122,122,0.4);
+}
+.bouton:hover{
+	box-shadow: 2px 3px 5px rgba(122,122,122,0);
+}
+.mini{
+	width: 6%;
+}
+.petit{
+	width: 7%;
+}
+.large{
+	width:13%;
+}
+.bouton img{
+	width:auto;
+	height:60%;
+	margin-left:10%;
+}
+.bouton a{
+	margin-left: 10%;
+}
