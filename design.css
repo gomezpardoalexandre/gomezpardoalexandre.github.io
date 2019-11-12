@@ -193,6 +193,7 @@ img {
 }
 .liste{
 	position: relative;
+	overflow: hidden;
 }
 .icondiv{
 	position: absolute;
