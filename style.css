@@ -149,8 +149,35 @@ a:hover {
     width: 80%;
     margin: 4% auto;
     padding : 0;
+    font-weight: 400;
 }
 
 .off{
     opacity: 0.2;
+}
+/* ------------------- Projet----------------------*/
+.btn{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.trait{
+    width: 41%;
+    height: 1px;
+    background-color: black;
+}
+.plus{
+    font-family: "gatwick";
+    font-size:1em;
+    font-weight: 300;
+}
+.projet img{
+    width:100%;
+    font-weight: 600;
+}
+.projet{
+    width:80%;
+    margin:5% auto;
 }
