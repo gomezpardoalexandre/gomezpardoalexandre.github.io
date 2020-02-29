@@ -14,6 +14,7 @@ body{
     overflow-x: hidden;
     margin: 0 auto;
     background-color: #ffffff; 
+    min-height:880px;
 }
 .global{
     position: relative;
