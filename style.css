@@ -1,13 +1,13 @@
 @font-face {
     font-family: "gatwick";
     font-weight: 500;
-    src: url("/font/Gatwick-Light.otf") format("otf");
+    src: url("font/Gatwick-Light.otf") format("otf");
    }
 
 @font-face {
     font-family: "gatwick";
     font-weight: 600;
-    src: url("/font/Gatwick-Medium.otf") format("otf");
+    src: url("font/Gatwick-Medium.otf") format("otf");
 }
 body{
     width:1000px;
