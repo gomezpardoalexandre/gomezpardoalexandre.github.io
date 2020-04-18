@@ -2,6 +2,7 @@
 <head>
 <title>Alex</title>
 <link  href="style1.css" rel="stylesheet">
+<link href="mobile.css" rel="stylesheet" media="screen and (max-width: 900px)">
 </head>
 <body>
     <main>
@@ -34,27 +35,27 @@
             <div class="separateur"></div>
             <div class="index">
                 <ul>
-                    <li><a>All</a><span>26</span></li>
-                    <li><a>Application</a><span>2</span></li>
-                    <li><a>Vidéo Clip</a><span>1</span></li>
-                    <li><a>Interview</a><span>1</span></li>
-                    <li><a>Graphic Identity</a><span>2</span></li>
-                    <li><a>Illustration</a><span>2</span></li>
-                    <li><a>Games</a><span>3</span></li>
-                    <li><a>Motion</a><span>4</span></li>
-                    <li><a>Augmented reality</a><span>1</span></li>
-                    <li><a>Web design</a><span>7</span></li>
-                    <li><a>3D</a><span>3</span></li>
+                    <li id="all"><a>All</a><span>26</span></li>
+                    <li id="app"><a>Application</a><span>2</span></li>
+                    <li id="videoclip"><a>Vidéo Clip</a><span>1</span></li>
+                    <li id="interview"><a>Interview</a><span>1</span></li>
+                    <li id="graphic"><a>Graphic Identity</a><span>2</span></li>
+                    <li id="illu"><a>Illustration</a><span>2</span></li>
+                    <li id="jeu"><a>Games</a><span>3</span></li>
+                    <li id="motion"><a>Motion</a><span>4</span></li>
+                    <li id="ar"><a>Augmented reality</a><span>1</span></li>
+                    <li id="web"><a>Web design</a><span>7</span></li>
+                    <li id="3D"><a>3D</a><span>3</span></li>
                 </ul>
             </div>
             <div class="projet web">
                 <img src="image/Adidas.jpg">
+                <img id="adidas" class="hide more" src="image/Adidas2.jpg">
                 <div class="btn">
                 <div class="trait"></div>
-                <p class="plus">show me more</p>
+                <p class="plus" id="adidas_btn">show me more</p>
                 <div class="trait"></div>
                 </div>
-                <!--<img src="image/Adidas2.jpg">-->
             </div>
             <div class="projet web">
                 <img src="image/projet3.jpg">
@@ -65,7 +66,7 @@
                 </div>
                 <!--<img src="image/Adidas2.jpg">-->
             </div>
-            <div class="projet web illustration">
+            <div class="projet web illu">
                 <img src="image/projet5.jpg">
                 <div class="btn">
                 <div class="trait"></div>
@@ -92,7 +93,7 @@
                 </div>
                 <!--<img src="image/Adidas2.jpg">-->
             </div>
-            <div class="projet ar illustration">
+            <div class="projet ar illu">
                 <img src="image/Plan de travail – 3.png">
                 <div class="btn">
                 <div class="trait"></div>
@@ -228,9 +229,34 @@
             $('.cv').css("display", "block");
             $('.contact, .aboutme, .work').css("display","none");
             $('.cv').animate({opacity:'1'},"slow");
-        });
-    
+        }); 
         </script>    
+        <script>
+          $('#web').click(function(){  
+              $('.project').hide();
+              $('.web').show();
+          });  
+          $('#app').click(function(){  
+              $('.projet').hide();
+              $('.app').show();
+          }); 
+          $('#videoclip').click(function(){  
+              $('.projet').hide();
+              $('.video').show();
+          }); 
+          $('#motion').click(function(){  
+              $('.projet').hide();
+              $('.motion').show();
+          });
+          $('#jeu').click(function(){  
+              $('.projet').hide();
+              $('.jeu').show();
+          });
+          $('#3D').click(function(){  
+              $('.projet').hide();
+              $('.3D').show();
+          });    
+        </script>
     </main>
 </body>
 
