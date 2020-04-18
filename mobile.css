@@ -1,0 +1,49 @@
+ul{
+    list-style: none;
+    position: relative;
+    height: 46vw;
+    overflow: hidden;
+    width: 101%;
+}
+.cache{
+    z-index: 1;
+    height: 78vw;
+    outline: 131px solid var(--color);
+    outline-offset: -105px;
+    width: 81vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a{
+    font-family: "gatwick";
+    font-size: 1em;
+    text-decoration: none;
+}
+.illustration {
+    /* height: 59%; */
+    z-index: -1;
+    margin: 94px auto 76px auto;
+    width: 105%;
+    /* transform: translateX(-1%); */
+}
+.work{
+    width: 100%;
+}
+.projet{
+    width:100%;
+}
+.work ul{
+    width:100%;
+}
+.cv .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin: 4% auto;}
+.cv a{
+    margin: 14% auto;
+}
+.mail{
+    margin:12%;
+}
