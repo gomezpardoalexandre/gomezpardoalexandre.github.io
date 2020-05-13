@@ -193,9 +193,15 @@ li{
     height: 1px;
     background-color: black;
 }
+.more p{
+    text-align: center;
+    font-family: "gatwick";
+    font-size: 1.2em; 
+    font-weight: 800;
+}
 .plus{
     font-family: "gatwick";
-    font-size:1em;
+    font-size:1.23vw;
     font-weight: 300;
 }
 .projet img{
@@ -205,4 +211,14 @@ li{
 .projet{
     width:80%;
     margin:5% auto;
+}
+.display{
+    display: block;
+
+}
+.none {
+    display: none;
+}
+video{
+    width: 100%;;
 }
