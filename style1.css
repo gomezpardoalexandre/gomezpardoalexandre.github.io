@@ -83,7 +83,7 @@ li{
     height: 50vw;
     outline: 203px solid var(--color);
     outline-offset: -105px;
-    width: 81vw;
+    width: 82vw;
     left: 50%;
     transform: translateX(-50%);
 }
