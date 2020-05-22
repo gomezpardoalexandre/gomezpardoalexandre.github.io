@@ -180,7 +180,7 @@ li{
     opacity: 0.2;
 }
 /* ------------------- Projet----------------------*/
-.btn{
+.btn,.btncs{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -199,10 +199,13 @@ li{
     font-size: 1.2em; 
     font-weight: 800;
 }
-.plus{
+.plus,.cs{
     font-family: "gatwick";
     font-size:1.23vw;
     font-weight: 300;
+}
+.cs{
+    opacity: 0.5;
 }
 .projet img{
     width:100%;
