@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Louvre</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+        <link href="projet_style.css" rel="stylesheet">
+		<style>
+			body { 
+                margin: 0; 
+                background-color: #131313;
+            }
+		</style>
+    </head>
+    <body>
+        <div class="col_left">
+            <img src="/img/louvre.svg">
+            <h1>Salon de 1827</h1>
+            <ul>
+                <li id="description">En partenariat avec la Petite Galerie du Louvre, notre équipe de deux designers et deux développeurs a réalisé un site sur l'oeuvre <em>'Charles X distribuant des récompenses aux artistes à la fin du salon de 1824'</em> de François-Joseph Heim. </li>
+                <li> Année : 2019</li>
+                <li>Gobelins, BDDI</li>
+            </ul>
+            <div class="tag">
+                <div id="un">
+                     <p>website</p>
+                </div>
+                <div id="deux">
+                    <p>3D</p>
+                </div>
+            </div>
+            <div class="browse">
+              
+            </div>
+        </div>
+        <div class="col_right">
+
+        </div>
+        <!--  -->
+        <div class="menu">
+            <p>explore</p>
+            <div class="index">
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="work.html">Work</a></li>
+                   <li><a>About me</a></li>
+                   <li><a>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function (){
+                // menu 
+                var menu = document.getElementsByClassName("menu");
+                var index = document.getElementsByClassName("index");
+                menu[0].addEventListener("mouseover", e =>{
+                    index[0].style.height = "200px";
+                    index[0].firstElementChild.style.display="block";
+                    menu[0].style.clipPath = "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 14%)"
+                });
+                menu[0].addEventListener("mouseout",e => {
+                    index[0].style.height = "0px";
+                    index[0].firstElementChild.style.display="none";
+                    menu[0].style.clipPath = "polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%)"
+                });
+            });    
+        </script>
+    </body>
+    
+</html>    

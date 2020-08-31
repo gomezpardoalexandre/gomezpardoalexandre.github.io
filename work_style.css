@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 500;
+    src: url("/font/Aeonik-Regular.woff") format("woff"),
+} 
+h1{
+    color:#ff4232;
+    font-family: 'Sporting Grotesque';
+    font-size:70px;
+    margin: 0.5em auto;
+    text-align: center;
+    font-weight: 800;
+}
+#filtre{
+    overflow-x: scroll;
+   white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  padding-right:2em;
+}
+#filtre::-webkit-scrollbar {
+    display: none;
+  }
+
+label{
+    color:white;
+    font-family: "Aeonik";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    margin-left: 1.5em;
+}
+.container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+} 
+.container{
+    padding-left: 26px;
+    position: relative;
+}
+.checkmark {
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    height: 20px;
+    width: 22px;
+    left : -1.5px;
+    background-color: white;
+  }
+.checker {
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #131313;
+    height: 18px;
+    width: 20px;
+    top: 1px;
+    left: 1px;
+  }
+[id^= check]{
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #131313;
+    height: 15px;
+    width: 16px;
+    top: 10%;
+    left: 2px;
+}  
+
+/* menu */
+.menu{
+    position: absolute;
+    background-color: #ff4232 ;
+    bottom: 0;
+    clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+    width : auto;
+    right:0;
+    cursor: pointer;
+   transition: ease-out 1s all;
+}
+.menu p{
+    font-family: 'Sporting Grotesque';
+    font-weight: 500;
+    padding: 0.9em 1em 0.6em 1em;
+    font-size: 35px;
+    display: inline-block;
+    line-height: 35px;
+    margin:0;
+    color: white;
+}
+.index{
+    height:0;
+    transition: ease-out 1s all;
+}
+.index ul{
+    list-style: none;
+    margin-bottom: 2em;
+    display: none;
+    padding-left: 15%;
+}
+.index ul li a{
+    font-family: 'Sporting Grotesque';
+    font-size: 25px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.index ul li a:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* tiles */
+.tiles{
+    margin: 0 auto;
+    width: 80%;
+    padding-top:5%;
+}
+[id^= projet]{
+    opacity: 0.5;
+}
+.titre{
+    position: absolute;
+    color:white;
+}
+.titre p {
+    margin: 0;
+    font-family: 'Sporting Grotesque';
+    font-weight: 800;
+    font-size: 2em;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.lien_insta{
+    margin-top: 2em;
+    color: white;
+    font-family: 'Aeonik';
+    text-align: center;
+    width: 100%;
+}
+.lien_insta p{
+    width: 100%;
+}

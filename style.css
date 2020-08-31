@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Sporting Grotesque";
+    font-weight: 500;
+    src: url("/font/Sporting_Grotesque-Bold_web.woff") format("woff"),
+   }
+@font-face {
+    font-family: "Sporting Grotesque";
+    font-weight: 800;
+    src: url("/font/Sporting_Grotesque-Regular_web.woff") format("woff"),
+   } 
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 300;
+    src: url("/font/Aeonik-Light.woff") format("woff"),
+} 
+     
+.body{
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    width:17%;
+    height:auto;
+    margin-left: 42.5%;
+    margin-top : 10%;
+}
+.menu{
+    position: absolute;
+    background-color: #ff4232 ;
+    bottom: 0;
+    clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+    width : auto;
+    right:0;
+    cursor: pointer;
+   transition: ease-out 1s all;
+}
+.menu p{
+    font-family: 'Sporting Grotesque';
+    font-weight: 500;
+    padding: 0.9em 1em 0.6em 1em;
+    font-size: 50px;
+    display: inline-block;
+    line-height: 50px;
+    margin:0;
+    color: white;
+}
+.index{
+    height:0;
+    transition: ease-out 1s all;
+}
+.index ul{
+    list-style: none;
+    margin-bottom: 2em;
+    display: none;
+}
+.index ul li a{
+    font-family: 'Sporting Grotesque';
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.index ul li a:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright{
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    font-family: "Aeonik";
+    font-weight: 300;
+    color: white;
+}

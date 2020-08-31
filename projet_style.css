@@ -1,0 +1,113 @@
+html, body{
+    height: 100%;
+}
+.col_left{
+    position: relative;
+    width:20%;
+    min-width:250px;
+    padding: 0em 2em;
+    height: 100vh;
+    border-right: solid 3px black;
+    color:white;
+    font-family: 'Aeonik';
+}
+.col_left img{
+    margin-bottom : 5%;
+    margin-top: 20%;
+}
+.col_left ul{
+    list-style: none;
+    padding: 0% 1em;
+    margin-bottom: 2em;
+}
+.col_left li{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+#description{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h1{
+    font-family: "Sporting Grotesque";
+    font-weight: 700;
+    font-size: 26px;
+    margin-left:0.6em ;
+    margin-bottom: 0.5em;
+}
+.tag {
+    padding: 0em 0.5em;
+}
+.tag div {
+    border-radius: 100px;
+    font-family: 'Aeonik';
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    padding: 0.3em 1em;
+    margin-left:0.5em;
+}
+.tag div p{
+    margin:0;
+    line-height: 15px;
+    padding-bottom: 2px;
+}
+#un{
+    background-color: #ff4232;
+}
+#deux{
+    background-color: #453DF5 ;
+}
+.browse{
+    position: absolute;
+    bottom:2em;
+    right:1em;
+    font-family: 'Aeonik';
+}
+
+
+
+/* menu */
+.menu{
+    position: absolute;
+    background-color: #ff4232 ;
+    bottom: 0;
+    clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+    width : auto;
+    right:0;
+    cursor: pointer;
+   transition: ease-out 1s all;
+}
+.menu p{
+    font-family: 'Sporting Grotesque';
+    font-weight: 500;
+    padding: 0.9em 1em 0.6em 1em;
+    font-size: 35px;
+    display: inline-block;
+    line-height: 35px;
+    margin:0;
+    color: white;
+}
+.index{
+    height:0;
+    transition: ease-out 1s all;
+}
+.index ul{
+    list-style: none;
+    margin-bottom: 2em;
+    display: none;
+    padding-left: 15%;
+}
+.index ul li a{
+    font-family: 'Sporting Grotesque';
+    font-size: 25px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.index ul li a:hover{
+    color:white;
+    text-decoration: underline;
+    cursor: pointer;
+}
