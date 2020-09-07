@@ -1,7 +1,22 @@
 @font-face {
     font-family: "Aeonik";
     font-weight: 500;
-    src: url("/font/Aeonik-Regular.woff") format("woff"),
+    src: url("/font/Aeonik-Regular.woff") format("woff")
+} 
+@font-face {
+    font-family: "Sporting Grotesque";
+    font-weight: 500;
+    src: url("/font/Sporting_Grotesque-Bold_web.woff") format("woff")
+   }
+@font-face {
+    font-family: "Sporting Grotesque";
+    font-weight: 800;
+    src: url("/font/Sporting_Grotesque-Regular_web.woff") format("woff")
+   } 
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 300;
+    src: url("/font/Aeonik-Light.woff") format("woff")
 } 
 h1{
     color:#ff4232;
