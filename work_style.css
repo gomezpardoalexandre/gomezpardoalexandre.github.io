@@ -84,12 +84,12 @@ label{
 
 /* menu */
 .menu{
-    position: absolute;
-    background-color: #ff4232 ;
+    position: sticky;
+    background-color: #ff4232;
     bottom: 0;
     clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
-    width : auto;
-    right:0;
+    width: 17%;
+    left: 83%;
     cursor: pointer;
    transition: ease-out 1s all;
 }

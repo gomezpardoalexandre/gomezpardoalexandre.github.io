@@ -36,7 +36,7 @@
 }
 .menu p{
     font-family: 'Sporting Grotesque';
-    font-weight: 500;
+    font-weight: 300;
     padding: 0.9em 1em 0.6em 1em;
     font-size: 50px;
     display: inline-block;
@@ -58,7 +58,7 @@
     font-size: 30px;
     text-decoration: none;
     color:black;
-    font-weight: 500;
+    font-weight: 300;
 }
 .index ul li a:hover{
     color:white;
