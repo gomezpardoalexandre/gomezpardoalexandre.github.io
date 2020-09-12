@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Sporting Grotesque";
-    font-weight: 500;
+    font-weight: 800;
     src: url("/font/Sporting_Grotesque-Bold_web.woff") format("woff")
    }
 @font-face {
     font-family: "Sporting Grotesque";
-    font-weight: 800;
+    font-weight: 500;
     src: url("/font/Sporting_Grotesque-Regular_web.woff") format("woff")
    } 
 @font-face {

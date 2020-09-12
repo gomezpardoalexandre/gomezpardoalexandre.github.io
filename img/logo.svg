@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 113.7 113.7" style="enable-background:new 0 0 113.7 113.7;" xml:space="preserve">
+	 viewBox="0 0 150.7 130.4" style="enable-background:new 0 0 150.7 130.4;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FF4232;}
-	.st1{display:none;fill:#005E58;}
+	.st0{display:none;fill:#005E58;}
+	.st1{fill:#FF4232;}
 	.st2{fill:#FFFFFF;}
 </style>
-<rect x="0.1" y="0.1" class="st0" width="113.5" height="113.5"/>
-<polygon class="st1" points="85.2,7.7 28.5,7.7 0.1,56.9 28.5,106 85.2,106 113.6,56.9 "/>
+<polygon class="st0" points="104.8,16.1 48.1,16.1 19.7,65.3 48.1,114.4 104.8,114.4 133.2,65.3 "/>
+<polygon class="st1" points="112.9,0 37.6,0 0,65.2 37.6,130.4 112.9,130.4 150.5,65.2 "/>
 <g>
-	<circle class="st2" cx="39.3" cy="35.8" r="18.7"/>
-	<path class="st2" d="M20.7,50.5v46.1h38.1C58.8,96.6,23.6,86.8,20.7,50.5z"/>
-	<path class="st2" d="M60.5,17.1v79.4h13.8L93,80.4V17.1L60.5,17.1z"/>
-	<polygon class="st2" points="93,83.7 77.9,96.5 93,96.5 	"/>
+	<circle class="st2" cx="59.5" cy="46.3" r="16.8"/>
+	<path class="st2" d="M42.8,59.5V101H77C77,101,45.4,92.1,42.8,59.5z"/>
+	<path class="st2" d="M78.6,29.5v71.4H91l16.8-14.5V29.5H78.6z"/>
+	<polygon class="st2" points="107.8,89.4 94.2,100.9 107.8,100.9 	"/>
 </g>
 </svg>

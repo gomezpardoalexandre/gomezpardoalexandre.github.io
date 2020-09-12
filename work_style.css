@@ -5,12 +5,12 @@
 } 
 @font-face {
     font-family: "Sporting Grotesque";
-    font-weight: 500;
+    font-weight: 800;
     src: url("/font/Sporting_Grotesque-Bold_web.woff") format("woff")
    }
 @font-face {
     font-family: "Sporting Grotesque";
-    font-weight: 800;
+    font-weight: 500;
     src: url("/font/Sporting_Grotesque-Regular_web.woff") format("woff")
    } 
 @font-face {
@@ -88,8 +88,8 @@ label{
     background-color: #ff4232;
     bottom: 0;
     clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
-    width: 17%;
-    left: 83%;
+    width: 220px;
+    left: 100%;
     cursor: pointer;
    transition: ease-out 1s all;
 }

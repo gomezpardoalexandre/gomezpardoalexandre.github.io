@@ -5,6 +5,8 @@
         <title>Louvre</title>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
         <link href="projet_style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 		<style>
 			body { 
                 margin: 0; 
@@ -13,6 +15,7 @@
 		</style>
     </head>
     <body>
+        <div class="container">
         <div class="col_left">
             <img src="/img/louvre.svg">
             <h1>Salon de 1827</h1>
@@ -34,7 +37,31 @@
             </div>
         </div>
         <div class="col_right">
+         
 
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide"><img src="/img/louvre/intro_mckup.png"></div>
+                        <div class="splide__slide"><img src="/img/louvre/Capture d’écran 2020-08-30 à 16.50.56.png"></div>
+                        <div class="splide__slide"><img src="/img/louvre/Capture d’écran 2020-08-30 à 16.51.50.png"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <h2>Plonger dans l'histoire des tableaux</h2>
+                <hr  style="width:80%">
+                <div class="ligne">
+                    <div class="gauche"></div>
+                    <div class="droite">
+                        <h3>Un salon dans le salon</h3>
+                        <p>Le site met en scène le salon de 1827 où a été exposé l'oeuvre de François-Joseph Heim, elle-même représentant le salon de 1824. Conformément au salon, l'utilisateur se retrouve à parcourir un mur tapissé de tableau, plongé dans l'atmosphère d'antan. Chaque tableau est une entrée vers une histoire différente à travers laquel l'étudiant va pouvoir apprendre ludiquement, sans effort.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         </div>
         <!--  -->
         <div class="menu">
@@ -48,6 +75,8 @@
                 </ul>
             </div>
         </div>
+
+
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function (){
                 // menu 
@@ -63,7 +92,17 @@
                     index[0].firstElementChild.style.display="none";
                     menu[0].style.clipPath = "polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%)"
                 });
+                // Carousel
+                var elms = document.getElementsByClassName( 'splide' );
+                    for ( var i = 0, len = elms.length; i < len; i++ ) {
+                        new Splide( elms[ i ] ).mount();
+                    }
             });    
+            
+           
+          
+            
+          
         </script>
     </body>
     

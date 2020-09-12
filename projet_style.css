@@ -28,6 +28,7 @@ html, body{
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 15px;
+    line-height: 18px;
 }
 h1{
     font-family: "Sporting Grotesque";
@@ -65,7 +66,30 @@ h1{
     right:1em;
     font-family: 'Aeonik';
 }
+.container{
+    display: flex;
+}
+.col_right{
+    width: 80%;
+    min-width: 75%;
+}
+.splide__slide{
+    width:auto;
+    height:500px;
+    object-fit: contain;
+}
+.splide__slide img{
+    width: 100%;
+}
 
+h2{
+    color:white;
+    text-align: center;
+    font-family: "Sporting Grotesque";
+    font-weight: 100;
+    font-size: 35px;
+    margin-bottom:0;
+}
 
 
 /* menu */
