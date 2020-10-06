@@ -17,12 +17,35 @@
 .body{
     overflow: hidden;
 }
-.logo{
+.catchy{
+    color:black;
     position: absolute;
-    width:17%;
+    font-family: 'Sporting Grotesque';
+    font-weight: 800;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    top:32%;
+}
+.langue{
+    position: absolute;
     height:auto;
-    margin-left: 42.5%;
-    margin-top : 10%;
+    right: 2%;
+    top:5px;
+    color:white;
+    font-family: 'Sporting Grotesque';
+    font-weight: 500;
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+.name{
+    color:white;
+    position: absolute;
+    font-family: 'Sporting Grotesque';
+    font-weight: 500;
+    left: 2%;
+    top:5px;
+    font-size: 1.5em;
 }
 .menu{
     position: absolute;
@@ -38,7 +61,7 @@
     font-family: 'Sporting Grotesque';
     font-weight: 300;
     padding: 0.9em 1em 0.6em 1em;
-    font-size: 50px;
+    font-size: 45px;
     display: inline-block;
     line-height: 50px;
     margin:0;
@@ -55,7 +78,7 @@
 }
 .index ul li a{
     font-family: 'Sporting Grotesque';
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
     color:black;
     font-weight: 300;
@@ -71,5 +94,6 @@
     left: 2em;
     font-family: "Aeonik";
     font-weight: 300;
-    color: white;
+    font-size: 1em;;
+    color: #b8271a;
 }
