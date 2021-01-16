@@ -18,13 +18,21 @@
     font-weight: 300;
     src: url("/font/Aeonik-Light.woff") format("woff")
 } 
+
 h1{
     color:#ff4232;
     font-family: 'Sporting Grotesque';
     font-size:70px;
     margin: 0.5em auto;
+    margin-top: 0.6em;
     text-align: center;
     font-weight: 800;
+}
+.header {
+    padding-top: 20px;
+    position: sticky;
+    top:0px;
+    background-color: #000000;
 }
 #filtre{
     overflow-x: scroll;
@@ -36,7 +44,7 @@ h1{
 }
 #filtre::-webkit-scrollbar {
     display: none;
-  }
+}
 
 label{
     color:white;
@@ -66,7 +74,7 @@ label{
 .checker {
     position: absolute;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: #131313;
+    background-color: #000000;
     height: 18px;
     width: 20px;
     top: 1px;
@@ -75,7 +83,7 @@ label{
 [id^= check]{
     position: absolute;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: #131313;
+    background-color: #000000;
     height: 15px;
     width: 16px;
     top: 10%;
@@ -85,23 +93,24 @@ label{
 /* menu */
 .menu{
     position: sticky;
-    background-color: #ff4232;
     bottom: 0;
-    clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
-    width: 220px;
-    left: 100%;
+    /* width: auto; */
+    float: right;
     cursor: pointer;
-   transition: ease-out 1s all;
+    transition: ease-out 1s all;
+    width: 14%;
+    text-align: right;
+    padding-right: 1em;
 }
 .menu p{
     font-family: 'Sporting Grotesque';
-    font-weight: 500;
-    padding: 0.9em 1em 0.6em 1em;
+    font-weight: 300;
+    padding-bottom: 0.3em;
     font-size: 35px;
     display: inline-block;
     line-height: 35px;
     margin:0;
-    color: white;
+    color : white;
 }
 .index{
     height:0;
@@ -111,17 +120,18 @@ label{
     list-style: none;
     margin-bottom: 2em;
     display: none;
-    padding-left: 15%;
+    text-align: right;
 }
 .index ul li a{
     font-family: 'Sporting Grotesque';
     font-size: 25px;
     text-decoration: none;
-    color:black;
+    color:white;
     font-weight: 500;
+  
 }
 .index ul li a:hover{
-    color:white;
+    color:#ff4232;
     text-decoration: underline;
     cursor: pointer;
 }

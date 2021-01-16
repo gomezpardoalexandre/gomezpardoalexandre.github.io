@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         <title>Gomez Pardo Alexandre</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
         <link href="style.css" rel="stylesheet">
 		<style>
@@ -12,21 +13,28 @@
 			canvas { display: block;
                 background-color: #ffffff;
            }
+         
 		</style>
     </head>
     
 	<body>
+        <div class="cursor">
+            <div class="cursor-center"></div>
+        </div>
         <div class="name">
             <p>Alexandre Gomez Pardo</p>
         </div>
        <div class="langue">
-          <p>FR | EN </p>
+           <img src="img/instagram.svg">
        </div>
        <div class="catchy">
-           <h1>Graphique Design</h1>
+           <h1><span visible="on" style="position: absolute;">UI - UX</span> 
+            <span visible="none" style="position: absolute;">Motion</span>
+            <span visible="none" >Graphic</span> </h1>
+            <h1>Design</h1>
        </div>
        <div class="menu">
-           <p>explore</p>
+           <p>menu</p>
            <div class="index">
                <ul>
                   <li><a href="works.html">Works</a></li>
@@ -42,18 +50,28 @@
    
 
        <script type="text/javascript">
+
+            document.addEventListener("mousemove", MoveCurseur);
+            function MoveCurseur(e){
+                let curseur = document.querySelector('.cursor');
+                var x = e.clientX - 10;
+                var y = e.clientY - 10;
+                console.log(y)
+                curseur.style.transform = 'translate('+ x + 'px,' + y +'px)';    
+                
+            }
             function menu(){
                 var menu = document.getElementsByClassName("menu");
                 var index = document.getElementsByClassName("index");
                 menu[0].addEventListener("mouseover", e =>{
-                    index[0].style.height = "220px";
+                    index[0].style.height = "180px";
                     index[0].firstElementChild.style.display="block";
-                    menu[0].style.clipPath = "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%)"
+                   
                 });
                 menu[0].addEventListener("mouseout",e => {
                     index[0].style.height = "0px";
                     index[0].firstElementChild.style.display="none";
-                    menu[0].style.clipPath = "polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%)"
+                   
                 });
             }
             menu();
@@ -66,10 +84,10 @@
             // Our Javascript will go here.
 
             var scene = new THREE.Scene();
-            scene.background = new THREE.Color( 0xFF4232);
+            scene.background = new THREE.Color( 0xFF4C32);
             scene.fog = new THREE.Fog(0x000000 , 0, 50);
             var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-            camera.position.set(0,0,0);
+            camera.position.set(0,0,3.5);
          
            
 
@@ -86,7 +104,7 @@
             renderer.setSize( window.innerWidth, window.innerHeight );
             document.body.appendChild( renderer.domElement );
 
-            scene.add(new THREE.AxesHelper(50));
+          //  scene.add(new THREE.AxesHelper(50));
 
 
             
@@ -94,14 +112,11 @@
             controls.target.set(0, 0.75, 1.5);
             controls.minPolarAngle = Math.PI/2.01;
             controls.maxPolarAngle = Math.PI/2.01; // radians
-            controls.minAzimuthAngle = -Math.PI; // radians
-            controls.maxAzimuthAngle =  Math.PI/70;
+            controls.minAzimuthAngle = 0; // radians
+            controls.maxAzimuthAngle =  0;
             controls.enableZoom = true;
             controls.dispose();
-         //  
-         //   object.matrixAutoUpdate = false;
             document.addEventListener('mousemove', e => {
-                
                 controls.handleMouseMoveRotate(e);
             })
             
@@ -110,13 +125,12 @@
             
             // load 3D
 
-               
+            let model;   
             let loader = new GLTFLoader();
             loader.load('logo3D.gltf', function(gltf){
 
-                  
+                    model = gltf.scene;
                     gltf.scene.traverse( function( node ) {
-
                 if ( node.isMesh ) { 
                     node.castShadow = true;
                     node.castShadow = true;
@@ -167,16 +181,46 @@
             // render 
         function animate() {
                 renderer.render( scene, camera );
+                 if(model){model.rotation.y += 0.01;}
                 requestAnimationFrame( animate );
-             
             }
-       
-            
+                    
            animate();    
     
             </script>  
-        
-
+        <script>
+            var span = document.getElementsByTagName('span');
+            check();
+            console.log(span);
+            let i = 0;
+            var t=setInterval(changeWord,3000);
+            function changeWord(){
+                let word = span[i]; 
+                word.setAttribute('visible','on'); 
+                check();
+                word.setAttribute('visible','none'); 
+                if(i < 2) {
+                    i = i+1;
+                    console.log('i++');
+                }
+                else{ 
+                    i = 0;
+                }  
+            }
+            function check (){
+                for(let item of span){
+                visible = item.getAttribute('visible');
+                console.log(visible);
+                if(visible == 'none'){
+                    item.style.visibility = 'hidden'; 
+                    item.style.transition = 'visibility 0.5s, opacity 0.5s ease-in;'
+                }else{
+                    item.style.visibility = 'visible';
+                    item.style.transition = 'visibility 0.5s, opacity 0.5s ease-in;'
+                }
+            }}
+          
+        </script>
 
         </body>
 </html>

@@ -13,30 +13,60 @@
     font-weight: 300;
     src: url("/font/Aeonik-Light.woff") format("woff")
 } 
-     
+
+html, a{
+    cursor: none;
+}
 .body{
     overflow: hidden;
 }
+
+.cursor{
+    position:fixed;
+    /* background-color: black; */
+    user-select: none;
+    pointer-events: none;
+    border-radius: 50%;
+    border : 1px solid black;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+.cursor-center{
+    position: absolute;
+    margin: 7.5px;
+    width: 5px;
+    height: 5px;
+    background-color:black; 
+    border-radius: 50%;
+    z-index: 100;
+}
 .catchy{
-    color:black;
+    display: flex;
+    justify-content: space-around;
+    color: black;
     position: absolute;
     font-family: 'Sporting Grotesque';
     font-weight: 800;
     font-size: 3em;
-    width: 100%;
+    width: 70%;
     text-align: center;
-    top:32%;
+    top: 32%;
+    left: 15%;
 }
 .langue{
     position: absolute;
-    height:auto;
-    right: 2%;
-    top:5px;
-    color:white;
-    font-family: 'Sporting Grotesque';
-    font-weight: 500;
-    font-size: 1.2em;
+    height: auto;
+    width: auto;
+    right: 1.5%;
+    top: 18px;
     opacity: 0.5;
+}
+.langue img{
+    width: 40px;
+}
+.langue:hover{
+    opacity: 1;
 }
 .name{
     color:white;
@@ -49,19 +79,18 @@
 }
 .menu{
     position: absolute;
-    background-color: #ff4232 ;
     bottom: 0;
-    clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
     width : auto;
     right:0;
-    cursor: pointer;
+    padding-right: 1.7em;
+    text-align: right;
    transition: ease-out 1s all;
 }
 .menu p{
     font-family: 'Sporting Grotesque';
     font-weight: 300;
-    padding: 0.9em 1em 0.6em 1em;
-    font-size: 45px;
+    padding-bottom: 0.3em;
+    font-size: 40px;
     display: inline-block;
     line-height: 50px;
     margin:0;
@@ -78,15 +107,13 @@
 }
 .index ul li a{
     font-family: 'Sporting Grotesque';
-    font-size: 35px;
+    font-size: 30px;
     text-decoration: none;
     color:black;
     font-weight: 300;
 }
 .index ul li a:hover{
     color:white;
-    text-decoration: underline;
-    cursor: pointer;
 }
 .copyright{
     position: absolute;

@@ -10,62 +10,51 @@
 		<style>
 			body { 
                 margin: 0; 
-                background-color: #131313;
+                background-color: #005E58;
             }
 		</style>
     </head>
     <body>
-        <div class="container">
-        <div class="col_left">
-            <img src="/img/louvre.svg">
-            <h1>Salon de 1827</h1>
-            <ul>
-                <li id="description">En partenariat avec la Petite Galerie du Louvre, notre équipe de deux designers et deux développeurs a réalisé un site sur l'oeuvre <em>'Charles X distribuant des récompenses aux artistes à la fin du salon de 1824'</em> de François-Joseph Heim. </li>
-                <li> Année : 2019</li>
-                <li>Gobelins, BDDI</li>
-            </ul>
+        
+            <div class="header">
+                <div class="col_left">
+                    <img src="/img/louvre.svg">
+                </div>
+                <div class="col_right">
+                    <h1>Salon de 1827</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col_left">
+                
+                        <ul>
+                            <li id="description">En partenariat avec la Petite Galerie du Louvre, notre équipe de deux designers et deux développeurs a réalisé un site sur l'oeuvre <em>'Charles X distribuant des récompenses aux artistes à la fin du salon de 1824'</em> de François-Joseph Heim. </li>
+                            <li> Année : 2019</li>
+                            <li>Gobelins, BDDI</li>
+                        </ul> 
+                </div>
+                <div class="col_right">
+                    
+                    <div class="col_left_mid">
+                        <div class="description">
+                            <h2>Plonger dans l'histoire des tableaux</h2>
+                            <hr  style="width:100%">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="tag">
                 <div id="un">
-                     <p>website</p>
+                    <p>website</p>
                 </div>
                 <div id="deux">
                     <p>3D</p>
                 </div>
-            </div>
-            <div class="browse">
-              
-            </div>
-        </div>
-        <div class="col_right">
-         
-
-            <div class="splide">
-                <div class="splide__track">
-                    <div class="splide__list">
-                        <div class="splide__slide"><img src="/img/louvre/intro_mckup.png"></div>
-                        <div class="splide__slide"><img src="/img/louvre/Capture d’écran 2020-08-30 à 16.50.56.png"></div>
-                        <div class="splide__slide"><img src="/img/louvre/Capture d’écran 2020-08-30 à 16.51.50.png"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="description">
-                <h2>Plonger dans l'histoire des tableaux</h2>
-                <hr  style="width:80%">
-                <div class="ligne">
-                    <div class="gauche"></div>
-                    <div class="droite">
-                        <h3>Un salon dans le salon</h3>
-                        <p>Le site met en scène le salon de 1827 où a été exposé l'oeuvre de François-Joseph Heim, elle-même représentant le salon de 1824. Conformément au salon, l'utilisateur se retrouve à parcourir un mur tapissé de tableau, plongé dans l'atmosphère d'antan. Chaque tableau est une entrée vers une histoire différente à travers laquel l'étudiant va pouvoir apprendre ludiquement, sans effort.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
+            </div>      
         <!--  -->
         <div class="menu">
-            <p>explore</p>
+            <p>menu</p>
             <div class="index">
                 <ul>
                    <li><a href="index.html">Home</a></li>
@@ -93,11 +82,11 @@
                     menu[0].style.clipPath = "polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%)"
                 });
                 // Carousel
-                var elms = document.getElementsByClassName( 'splide' );
-                    for ( var i = 0, len = elms.length; i < len; i++ ) {
-                        new Splide( elms[ i ] ).mount();
-                    }
-            });    
+            //     var elms = document.getElementsByClassName( 'splide' );
+            //         for ( var i = 0, len = elms.length; i < len; i++ ) {
+            //             new Splide( elms[ i ] ).mount();
+            //         }
+             });    
             
            
           
