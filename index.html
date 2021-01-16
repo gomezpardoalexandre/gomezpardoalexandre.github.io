@@ -110,15 +110,13 @@
             
             const controls = new OrbitControls(camera, renderer.domElement);
             controls.target.set(0, 0.75, 1.5);
-            controls.minPolarAngle = Math.PI/2.01;
-            controls.maxPolarAngle = Math.PI/2.01; // radians
+            controls.minPolarAngle = Math.PI/2;
+            controls.maxPolarAngle = Math.PI/2; // radians
             controls.minAzimuthAngle = 0; // radians
             controls.maxAzimuthAngle =  0;
             controls.enableZoom = true;
             controls.dispose();
-            document.addEventListener('mousemove', e => {
-                controls.handleMouseMoveRotate(e);
-            })
+           
             
 
             controls.update();
