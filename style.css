@@ -42,31 +42,49 @@ html, a{
     z-index: 100;
 }
 .catchy{
+ 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: black;
     position: absolute;
     font-family: 'Sporting Grotesque';
     font-weight: 800;
     font-size: 3em;
-    width: 70%;
+    width: 100%;
     text-align: center;
     top: 32%;
-    left: 15%;
+    text-align: left;
 }
-.langue{
+.catchy h1{
+    width: 50%;
+    color: #48D597;
+    padding: 0px 10px;
+}
+#defile{
+    text-align: end;
+    position: relative;
+    width: 50%;
+}
+#defile h1{
+    position: absolute;
+    right: 0px;
+}
+.rs{
     position: absolute;
     height: auto;
     width: auto;
     right: 1.5%;
     top: 18px;
-    opacity: 0.5;
+    font-family: 'Sporting Grotesque';
+   
 }
-.langue img{
-    width: 40px;
+.rs a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
 }
-.langue:hover{
-    opacity: 1;
+.rs a:hover{
+    color: #48D597;
 }
 .name{
     color:white;
@@ -82,7 +100,7 @@ html, a{
     bottom: 0;
     width : auto;
     right:0;
-    padding-right: 1.7em;
+    padding-right: 1.5%;
     text-align: right;
    transition: ease-out 1s all;
 }
@@ -109,11 +127,11 @@ html, a{
     font-family: 'Sporting Grotesque';
     font-size: 30px;
     text-decoration: none;
-    color:black;
+    color:white;
     font-weight: 300;
 }
 .index ul li a:hover{
-    color:white;
+    color:#48D597;
 }
 .copyright{
     position: absolute;
@@ -122,5 +140,5 @@ html, a{
     font-family: "Aeonik";
     font-weight: 300;
     font-size: 1em;;
-    color: #b8271a;
+    color: #48D597;
 }

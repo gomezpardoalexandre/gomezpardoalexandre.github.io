@@ -24,14 +24,14 @@
         <div class="name">
             <p>Alexandre Gomez Pardo</p>
         </div>
-       <div class="langue">
-           <a href="https://www.instagram.com/gomezpardo_alex/" target="_blank"><img src="img/instagram.svg"></a>
+       <div class="rs">
+           <p><a href="https://www.instagram.com/gomezpardo_alex/" target="_blank">instagram</a> <a>twitter</a> <a>linkedin</a></p>
        </div>
        <div class="catchy">
-           <h1><span visible="on" style="position: absolute;">UI - UX</span> 
-            <span visible="none" style="position: absolute;">Motion</span>
-            <span visible="none" >Graphic</span> </h1>
-            <h1>Design</h1>
+           <h1 id="defile"><span visible="on" style="position: absolute;right:0px">UI - UX</span> 
+            <span visible="none" style="position: absolute; right:0px">Motion</span>
+            <span visible="none" >Graphic </span> </h1>
+            <h1 style="margin-left:20px">Design</h1>
        </div>
        <div class="menu">
            <p>menu</p>
@@ -84,7 +84,7 @@
             // Our Javascript will go here.
 
             var scene = new THREE.Scene();
-            scene.background = new THREE.Color( 0xFF4C32);
+            scene.background = new THREE.Color( 0x0e2721);
             scene.fog = new THREE.Fog(0x000000 , 0, 50);
             var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
             camera.position.set(0,0,3.5);
@@ -133,7 +133,7 @@
                     node.castShadow = true;
                     node.castShadow = true;
                     node.receiveShadow = true;
-                    node.material = new THREE.MeshPhongMaterial({color: 0xffffff});
+                    node.material = new THREE.MeshPhongMaterial({color: 0x0e2721    });
                     if ( node.material.map ) node.material.anisotropy = 16;
                  }
 
@@ -144,7 +144,7 @@
 
         
                 /////////////////////////////
-            var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 1);
+            var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.1);
             scene.add(hemiLight);
              
             var spotlight = new THREE.SpotLight(0xffffff, 10);
