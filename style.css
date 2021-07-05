@@ -1,144 +1,166 @@
-@font-face {
-    font-family: "Sporting Grotesque";
-    font-weight: 800;
-    src: url("/font/Sporting_Grotesque-Bold_web.woff") format("woff")
-   }
-@font-face {
-    font-family: "Sporting Grotesque";
-    font-weight: 500;
-    src: url("/font/Sporting_Grotesque-Regular_web.woff") format("woff")
-   } 
+*{
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: "Aeonik";
-    font-weight: 300;
-    src: url("/font/Aeonik-Light.woff") format("woff")
-} 
-
-html, a{
-    cursor: none;
-}
-.body{
-    overflow: hidden;
-}
-
-.cursor{
-    position:fixed;
-    /* background-color: black; */
-    user-select: none;
-    pointer-events: none;
-    border-radius: 50%;
-    border : 1px solid black;
-    width: 20px;
-    height: 20px;
-    z-index: 100;
-}
-.cursor-center{
-    position: absolute;
-    margin: 7.5px;
-    width: 5px;
-    height: 5px;
-    background-color:black; 
-    border-radius: 50%;
-    z-index: 100;
-}
-.catchy{
- 
-    display: flex;
-    justify-content: center;
-    color: black;
-    position: absolute;
-    font-family: 'Sporting Grotesque';
-    font-weight: 800;
-    font-size: 3em;
-    width: 100%;
-    text-align: center;
-    top: 32%;
-    text-align: left;
-}
-.catchy h1{
-    width: 50%;
-    color: #48D597;
-    padding: 0px 10px;
-}
-#defile{
-    text-align: end;
-    position: relative;
-    width: 50%;
-}
-#defile h1{
-    position: absolute;
-    right: 0px;
-}
-.rs{
-    position: absolute;
-    height: auto;
-    width: auto;
-    right: 1.5%;
-    top: 18px;
-    font-family: 'Sporting Grotesque';
-   
-}
-.rs a{
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-}
-.rs a:hover{
-    color: #48D597;
-}
-.name{
-    color:white;
-    position: absolute;
-    font-family: 'Sporting Grotesque';
+    font-weight: 700;
+    src: url("@font/Aeonik-Bold.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 200;
+    src: url("@font/Aeonik-Light.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 400;
+    src: url("@font/Aeonik-Regular.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
     font-weight: 500;
-    left: 2%;
-    top:5px;
-    font-size: 1.5em;
+    src: url("@font/Aeonik-Medium.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Gatwick";
+    font-weight: 700;
+    src: url("@font/Gatwick-Bold.otf") format("otf"),
+}
+@font-face {
+    font-family: "Gatwick";
+    font-weight: 800;
+    src: url("@font/Gatwick-Ultrabold.otf") format("otf"),
+}   
+:root{
+    --contactme : #FBDC33;
+    --base : #FBDC33;
+    --accent : #296E5D; 
+    --background: #ffffff;
+}
+body{
+    background-color: var(--background);
+}
+canvas{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    cursor: pointer;
+
+}
+.background{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    opacity: 50%;
+}
+.background img{
+    height: 150%;
+    margin-top: -20%;
+    margin-left: -20%;
 }
 .menu{
     position: absolute;
-    bottom: 0;
-    width : auto;
-    right:0;
-    padding-right: 1.5%;
+    right: 3%;
+    top: 46px;
+    width: 100%;
     text-align: right;
-   transition: ease-out 1s all;
+    color: var(--accent);
 }
 .menu p{
-    font-family: 'Sporting Grotesque';
-    font-weight: 300;
-    padding-bottom: 0.3em;
-    font-size: 40px;
     display: inline-block;
-    line-height: 50px;
-    margin:0;
-    color: white;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
 }
-.index{
-    height:0;
-    transition: ease-out 1s all;
+.menu p a::before, .contact p a::before{
+    content:'';
+    height: 2px;
+    width: 20px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -4px;
+    transition: width 0.5s ease-in-out;
 }
-.index ul{
-    list-style: none;
-    margin-bottom: 2em;
-    display: none;
+.menu p a:hover::before, .contact p a:hover::before{
+    width: 40px;  
 }
-.index ul li a{
-    font-family: 'Sporting Grotesque';
-    font-size: 30px;
-    text-decoration: none;
-    color:white;
-    font-weight: 300;
+.logo{
+    position: absolute;
+    top: 0;
 }
-.index ul li a:hover{
-    color:#48D597;
+.logo svg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+}
+.background-logo{
+    background-color: var(--base);
+    width: 166px;
+    height: 166px;
+    border-radius: 20px;
+    margin-top: -32px;
+    margin-left: -32px;
+    transform: rotate(12deg);
+}
+.contact{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+
+}
+.background-contact{
+    background-color: var(--contactme);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(8deg);
+    margin-right: -9px;
+    margin-bottom: -137px;
+}
+.contact p{
+    position: absolute;
+    top: 28px;
+    right: 55px;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--accent);   
+}
+.filter{
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--accent);  
+    right: 50px
+}
+.video{
+    filter: brightness(1.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 .copyright{
     position: absolute;
-    bottom: 1em;
-    left: 2em;
-    font-family: "Aeonik";
-    font-weight: 300;
-    font-size: 1em;;
-    color: #48D597;
+    bottom: 10px;
+    left: 5px;
+    color: var(--accent);
+}
+.copyright p{
+    font-family: 'Aeonik',sans-serif;
+    font-weight: 400;
+    font-size: 11px;
 }

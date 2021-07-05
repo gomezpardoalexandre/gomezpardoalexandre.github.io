@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta auteur="Gomez Pardo Alexandre">
+<title>Ikea</title>
+<link href="style.css" rel="stylesheet">
+<link href="projet.css" rel="stylesheet">
+<link rel="icon" href="@img/logofavicon.ico" />
+</head>
+<body>
+    <div class="scrollable">    
+    <div class="background">
+        <img src="@img/background.svg">
+        
+    </div>
+
+
+    <div class="menu">
+        <p><a href="work.html">projets</a></p>
+        <p><a href="about.html">à propos</a></p>
+    </div>
+    <div class="logo2"><a href="index.html">
+        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="282.2" height="280.08" viewBox="0 0 282.2 280.08"><defs><style>.cls-1{fill:var(--accent);}</style></defs><polygon class="cls-1" points="31.73 5.99 7.03 5.99 7.03 103.9 31.73 103.9 31.73 68.47 128.73 68.47 128.73 43.22 31.73 43.22 31.73 5.99"/><polygon class="cls-1" points="178.31 78.34 178.31 5.99 152.73 5.99 152.73 103.9 275.16 103.9 275.16 78.34 178.31 78.34"/><rect class="cls-1" x="7.19" y="249.2" width="121.55" height="24.7"/><rect class="cls-1" x="7.19" y="127.41" width="121.55" height="25.49"/><rect class="cls-1" x="19.68" y="187.81" width="93.14" height="26.7"/><polygon class="cls-1" points="143.72 135.95 254.34 274.09 274.63 256.75 164.01 118.61 143.72 135.95"/></svg>
+    </a>
+    </div>
+
+    <div class="part1">
+
+        <div class="img-background">
+            <img src="@img/ikea/ikea.jpeg">
+            <p class="titre">Ikea</p>
+        </div>
+        
+        <div class="navigation">
+            <div id="detectB" onclick="Gobefore()">
+            <div id="before" class="before" >
+                                    <svg version="1.1" id="arrowbefore" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 64 62" xml:space="preserve">
+                    <path d="M22.6,12.5l-18,18c-0.2,0.2-0.4,0.5-0.5,0.9c-0.2,0.7,0,1.5,0.5,2l18,18c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2,0-2.8
+                        L10.8,33.9H58c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2H10.8l14.6-14.6c0.8-0.8,0.8-2.1,0-2.8C24.6,11.7,23.4,11.7,22.6,12.5z"/>
+                    </svg>
+                <div class="circle"></div>
+                
+            </div>
+            <p id="projetnavbefore" class="projetnav">Ostara</p> <!---before-->
+            </div>
+
+            <div id="detectA" class="detect" onclick="Goafter()">
+            
+            <div id="after" class="after">
+                <svg version="1.1" id="arrowafter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 62" style="enable-background:new 0 0 64 62;" xml:space="preserve">
+<path d="M41.4,51.4l18-18c0.2-0.2,0.4-0.5,0.5-0.9c0.2-0.7,0-1.5-0.5-2l-18-18c-0.8-0.8-2.1-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8L53.2,30
+	H6c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2h47.2L38.6,48.6c-0.8,0.8-0.8,2.1,0,2.8C39.4,52.2,40.6,52.2,41.4,51.4z"/>
+</svg>
+                <div class="circle"></div>
+               
+            </div>
+            <p id="projetnavafter" class="projetnav">Chatbox</p>
+            </div><!---after-->
+        </div>
+    </div>
+</div>
+
+
+
+<div class="scrolling">
+ 
+    <!--<div class="tag">  
+        <p>jeux - direction artistique - 3D</p>
+        <hr>
+    </div>---->
+
+    <div class="part2">
+
+        <h1>Ikea</h1>
+
+        <p>Réalisation d'une scène 3D et d'une affiche reprenant les codes publicitaires de la communication d'Ikea</p>
+     
+    </div>
+      
+        <img src="@img/ikea/ikea.jpeg" class="vertical">
+        <img src="@img/ikea/ikea-2.png">
+        
+
+        <div class="discover">
+            <button class="accordion">en savoir plus</button>
+                <div class="panel">
+                <p>Formation : Bachelor Designer Interactif aux Gobelins, Paris</p>
+                <p>Année : 2020</p>
+                <hr>
+                </div>
+        </div>
+        <p id="top" onclick="gotop()">Fermer</p>
+</div>   
+   
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<script src="script-projet.js"></script>
+   <script>
+ 
+
+        function gotop(){
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }    
+        function Gobefore(){
+            window.location = 'projet-ostara.html';
+        }  
+        function Goafter(){
+            window.location = 'projet-chatbox.html';
+        }   
+   
+    </script>
+
+
+</body>
+</html>
