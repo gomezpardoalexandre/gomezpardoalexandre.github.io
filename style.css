@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 700;
+    src: url("@font/Aeonik-Bold.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 200;
+    src: url("@font/Aeonik-Light.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 400;
+    src: url("@font/Aeonik-Regular.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Aeonik";
+    font-weight: 500;
+    src: url("@font/Aeonik-Medium.woff") format("woff2"),
+   }
+@font-face {
+    font-family: "Gatwick";
+    font-weight: 700;
+    src: url("@font/Gatwick-Bold.otf") format("otf"),
+}
+@font-face {
+    font-family: "Gatwick";
+    font-weight: 800;
+    src: url("@font/Gatwick-Ultrabold.otf") format("otf"),
+}   
+:root{
+    --contactme : #FBDC33;
+    --base : #FBDC33;
+    --accent : #296E5D; 
+    --background: #ffffff;
+}
+body{
+    background-color: var(--background);
+}
+canvas{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    cursor: pointer;
+
+}
+.background{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    opacity: 50%;
+}
+.background img{
+    height: 150%;
+    margin-top: -20%;
+    margin-left: -20%;
+}
+.menu{
+    position: absolute;
+    right: 3%;
+    top: 46px;
+    width: 100%;
+    text-align: right;
+    color: var(--accent);
+}
+.menu p{
+    display: inline-block;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 13px;
+    cursor: pointer;
+}
+.menu p a::before, .contact p a::before{
+    content:'';
+    height: 2px;
+    width: 20px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -4px;
+    transition: width 0.5s ease-in-out;
+}
+.menu p a:hover::before, .contact p a:hover::before{
+    width: 40px;  
+}
+.logo{
+    position: absolute;
+    top: 0;
+}
+.logo svg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+}
+.background-logo{
+    background-color: var(--base);
+    width: 166px;
+    height: 166px;
+    border-radius: 20px;
+    margin-top: -32px;
+    margin-left: -32px;
+    transform: rotate(12deg);
+}
+.contact{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+
+}
+.background-contact{
+    background-color: var(--contactme);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(8deg);
+    margin-right: -9px;
+    margin-bottom: -137px;
+}
+.contact p{
+    position: absolute;
+    top: 28px;
+    right: 55px;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--accent);   
+}
+.filter{
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Aeonik', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--accent);  
+    right: 50px
+}
+.video{
+    filter: brightness(1.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: var(--accent);
+}
+.copyright p{
+    font-family: 'Aeonik',sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}

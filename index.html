@@ -1,196 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-        <title>Gomez Pardo Alexandre</title>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
-        <link href="style.css" rel="stylesheet">
-		<style>
-			body { margin: 0; 
-                background-color: #ffffff;
-            }
-			canvas { display: block;
-                background-color: #ffffff;
-           }
-         
-		</style>
-    </head>
-    
-
-
-   
-
-       <script type="text/javascript">
-
-            document.addEventListener("mousemove", MoveCurseur);
-            function MoveCurseur(e){
-                let curseur = document.querySelector('.cursor');
-                var x = e.clientX - 10;
-                var y = e.clientY - 10;
-                console.log(y)
-                curseur.style.transform = 'translate('+ x + 'px,' + y +'px)';    
-                
-            }
-            function menu(){
-                var menu = document.getElementsByClassName("menu");
-                var index = document.getElementsByClassName("index");
-                menu[0].addEventListener("mouseover", e =>{
-                    index[0].style.height = "180px";
-                    index[0].firstElementChild.style.display="block";
-                   
-                });
-                menu[0].addEventListener("mouseout",e => {
-                    index[0].style.height = "0px";
-                    index[0].firstElementChild.style.display="none";
-                   
-                });
-            }
-            menu();
-       </script>
-
-		<script type="module">
-            import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r119/build/three.module.js';
-            import {OrbitControls} from '../three/examples/jsm/controls/OrbitControls.js';
-            import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r119/examples/jsm/loaders/GLTFLoader.js';
-            // Our Javascript will go here.
-
-            var scene = new THREE.Scene();
-            scene.background = new THREE.Color( 0x0e2721);
-            scene.fog = new THREE.Fog(0x000000 , 0, 50);
-            var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-            camera.position.set(0,0,3.5);
-         
-           
-
-
-            var renderer = new THREE.WebGLRenderer({antialias: true});
-            renderer.physicallyCorrectLights = true;
-			renderer.outputEncoding = THREE.sRGBEncoding;
-			renderer.shadowMap.enabled = true;
-			renderer.shadowMap.type = THREE.PCFShadowMap;
-         // renderer.outputEncoding = true ;
-            renderer.gammaFactor = 2.2;
-            renderer.toneMapping = THREE.CineonToneMapping;
-            renderer.toneMappingExposure = 3; 
-            renderer.setSize( window.innerWidth, window.innerHeight );
-            document.body.appendChild( renderer.domElement );
-
-          //  scene.add(new THREE.AxesHelper(50));
-
-
-            
-            const controls = new OrbitControls(camera, renderer.domElement);
-            controls.target.set(0, 0.75, 1.5);
-            controls.minPolarAngle = Math.PI/2;
-            controls.maxPolarAngle = Math.PI/2; // radians
-            controls.minAzimuthAngle = 0; // radians
-            controls.maxAzimuthAngle =  0;
-            controls.enableZoom = true;
-            controls.dispose();
-           
-            
-
-            controls.update();
-            
-            // load 3D
-
-            let model;   
-            let loader = new GLTFLoader();
-            loader.load('logo3D.gltf', function(gltf){
-
-                    model = gltf.scene;
-                    gltf.scene.traverse( function( node ) {
-                if ( node.isMesh ) { 
-                    node.castShadow = true;
-                    node.castShadow = true;
-                    node.receiveShadow = true;
-                    node.material = new THREE.MeshPhongMaterial({color: 0x0e2721    });
-                    if ( node.material.map ) node.material.anisotropy = 16;
-                 }
-
-                } );
-                scene.add(gltf.scene);
-               
-            });
-
+<head>
+<meta auteur="Gomez Pardo Alexandre">
+<title>Alex's</title>
+<link href="style.css" rel="stylesheet">
+<link rel="icon" href="@img/logofavicon.ico" />
+</head>
+<body style="height: 100vh; overflow: hidden;">
+    <div class="background">
+       <img src="@img/background.svg">
+      <canvas id=c></canvas>
+    </div>
+    <div class="menu">
+        <p><a href="work.html">projets</a></p>
+        <p><a href="about.html">à propos</a></p>
+    </div>
+    <div class="logo">
+        <div class="background-logo"></div>
+        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="282.2" height="280.08" viewBox="0 0 282.2 280.08"><defs><style>.cls-1{fill:#fff;}</style></defs><polygon class="cls-1" points="31.73 5.99 7.03 5.99 7.03 103.9 31.73 103.9 31.73 68.47 128.73 68.47 128.73 43.22 31.73 43.22 31.73 5.99"/><polygon class="cls-1" points="178.31 78.34 178.31 5.99 152.73 5.99 152.73 103.9 275.16 103.9 275.16 78.34 178.31 78.34"/><rect class="cls-1" x="7.19" y="249.2" width="121.55" height="24.7"/><rect class="cls-1" x="7.19" y="127.41" width="121.55" height="25.49"/><rect class="cls-1" x="19.68" y="187.81" width="93.14" height="26.7"/><polygon class="cls-1" points="143.72 135.95 254.34 274.09 274.63 256.75 164.01 118.61 143.72 135.95"/></svg>
+    </div>
+    <div class="contact">
+        <div class="background-contact"></div>
+        <p><a href="mailto:gomezpardo.alexandre@gmail.com">contact me</a></p>
+    </div>
+    <div class="copyright">
+        <p>© 2021 Alex</p>
+    </div>
+    <div class="video">
+        <video width="900" height="100%" autoplay loop muted playsinline>
+            <source src="@video/0016-0154_2-1.mov" type='video/mp4; codecs="hvc1"'>
+            <source src="@video/0016-0154.webm" type="video/webm">
+            </video>    
+    </div>
+    <script src="script.js"></script>
+    <script>
         
-                /////////////////////////////
-            var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.1);
-            scene.add(hemiLight);
-             
-            var spotlight = new THREE.SpotLight(0xffffff, 10);
-            
-            spotlight.position.set(10,10,30);
-            spotlight.target.position.x = 0;
-            spotlight.target.position.y = 0;
-            spotlight.castShadow = true;
-            spotlight.shadow.radius = 30;
-            spotlight.shadow.bias = -0.001;
-            spotlight.shadow.mapSize.width = 2000;
-            spotlight.shadow.mapSize.height = 2000;
-            scene.add(spotlight);
-            scene.add(spotlight.target);
-            //var spotLightHelper = new THREE.SpotLightHelper( spotlight );
-            //scene.add( spotLightHelper );
+       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-                window.addEventListener( 'resize', onWindowResize, false );
-
-                function onWindowResize(){
-
-                    camera.aspect = window.innerWidth / window.innerHeight;
-                    camera.updateProjectionMatrix();
-
-                    renderer.setSize( window.innerWidth, window.innerHeight );
-
-                }
-
-
-           
-
-            // render 
-        function animate() {
-                renderer.render( scene, camera );
-                 if(model){model.rotation.y += 0.01;}
-                requestAnimationFrame( animate );
+            if (prefersDarkScheme.matches && btn === ok) {
+                document.documentElement.style.cssText = "--base: #5AFFB0; --accent: #5AFFB0; --background: #000000";
+            } else {
+                document.documentElement.style.cssText = "--base: #FBDC33";
+                document.documentElement.style.cssText = "--accent: #296E5D";
             }
-                    
-           animate();    
-    
-            </script>  
-        <script>
-            var span = document.getElementsByTagName('span');
-            check();
-            console.log(span);
-            let i = 0;
-            var t=setInterval(changeWord,3000);
-            function changeWord(){
-                let word = span[i]; 
-                word.setAttribute('visible','on'); 
-                check();
-                word.setAttribute('visible','none'); 
-                if(i < 2) {
-                    i = i+1;
-                    console.log('i++');
-                }
-                else{ 
-                    i = 0;
-                }  
-            }
-            function check (){
-                for(let item of span){
-                visible = item.getAttribute('visible');
-                console.log(visible);
-                if(visible == 'none'){
-                    item.style.visibility = 'hidden'; 
-                    item.style.transition = 'visibility 0.5s, opacity 0.5s ease-in;'
-                }else{
-                    item.style.visibility = 'visible';
-                    item.style.transition = 'visibility 0.5s, opacity 0.5s ease-in;'
-                }
-            }}
-          
-        </script>
-
-        </body>
+    </script>
+</body>
 </html>
