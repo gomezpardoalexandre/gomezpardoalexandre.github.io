@@ -25,12 +25,12 @@
 @font-face {
     font-family: "Gatwick";
     font-weight: 700;
-    src: url("@font/Gatwick-Bold.otf"),
+    src: url("@font/Gatwick-Bold.woff") format("woff2"),
 }
 @font-face {
     font-family: "Gatwick";
     font-weight: 800;
-    src: url("@font/Gatwick-Ultrabold.otf"),
+    src: url("@font/Gatwick-Ultrabold.woff") format("woff2"),
 }   
 :root{
     --contactme : #FBDC33;
