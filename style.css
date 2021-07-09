@@ -5,32 +5,32 @@
 @font-face {
     font-family: "Aeonik";
     font-weight: 700;
-    src: url("@font/Aeonik-Bold.woff") format("woff2"),
+    src: url("@font/Aeonik-Bold.woff") format("woff"),
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 200;
-    src: url("@font/Aeonik-Light.woff") format("woff2"),
+    src: url("@font/Aeonik-Light.woff") format("woff"),
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 400;
-    src: url("@font/Aeonik-Regular.woff") format("woff2"),
+    src: url("@font/Aeonik-Regular.woff") format("woff"),
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 500;
-    src: url("@font/Aeonik-Medium.woff") format("woff2"),
+    src: url("@font/Aeonik-Medium.woff") format("woff"),
    }
 @font-face {
     font-family: "Gatwick";
     font-weight: 700;
-    src: url("@font/Gatwick-Bold.woff") format("woff2"),
+    src: url("@font/Gatwick-Bold.woff") format("woff"),
 }
 @font-face {
     font-family: "Gatwick";
     font-weight: 800;
-    src: url("@font/Gatwick-Ultrabold.woff") format("woff2"),
+    src: url("@font/Gatwick-Ultrabold.woff") format("woff"),
 }   
 :root{
     --contactme : #FBDC33;
