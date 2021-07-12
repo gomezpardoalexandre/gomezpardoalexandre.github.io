@@ -41,20 +41,20 @@
 @font-face {
     font-family: "Gatwick";
     font-weight: 700;
-    src: url('@font/Aeonik-Bold.eot');
-	src: url('@font/Aeonik-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('@font/Aeonik-Bold.woff') format('woff'),
-	     url('@font/Aeonik-Bold.ttf') format('truetype'),
-	     url('@font/Aeonik-Bold.svg#webfont') format('svg');
-}
-@font-face {
-    font-family: "Gatwick";
-    font-weight: 800;
     src: url('@font/Gatwick-Bold.eot');
 	src: url('@font/Gatwick-Bold.eot?#iefix') format('embedded-opentype'),
 	     url('@font/Gatwick-Bold.woff') format('woff'),
 	     url('@font/Gatwick-Bold.ttf') format('truetype'),
 	     url('@font/Gatwick-Bold.svg#webfont') format('svg');
+}
+@font-face {
+    font-family: "Gatwick";
+    font-weight: 800;
+    src: url('@font/Gatwick-Ultrabold.eot');
+	src: url('@font/Gatwick-Ultrabold.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Gatwick-Ultrabold.woff') format('woff'),
+	     url('@font/Gatwick-Ultrabold.ttf') format('truetype'),
+	     url('@font/Gatwick-Ultrabold.svg#webfont') format('svg');
 }   
 :root{
     --contactme : #FBDC33;
