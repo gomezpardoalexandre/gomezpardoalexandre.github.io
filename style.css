@@ -5,32 +5,56 @@
 @font-face {
     font-family: "Aeonik";
     font-weight: 700;
-    src: url("@font/Aeonik-Bold.woff") format("woff"),
+    src: url('@font/Aeonik-Bold.eot');
+	src: url('@font/Aeonik-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Aeonik-Bold.woff') format('woff'),
+	     url('@font/Aeonik-Bold.ttf') format('truetype'),
+	     url('@font/Aeonik-Bold.svg#webfont') format('svg');
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 200;
-    src: url("@font/Aeonik-Light.woff") format("woff"),
+    src: url('@font/Aeonik-Light.eot');
+	src: url('@font/Aeonik-Light.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Aeonik-Light.woff') format('woff'),
+	     url('@font/Aeonik-Light.ttf') format('truetype'),
+	     url('@font/Aeonik-Light.svg#webfont') format('svg');
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 400;
-    src: url("@font/Aeonik-Regular.woff") format("woff"),
+    src: url('@font/Aeonik-Regular.eot');
+	src: url('@font/Aeonik-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Aeonik-Regular.woff') format('woff'),
+	     url('@font/Aeonik-Regular.ttf') format('truetype'),
+	     url('@font/Aeonik-Regular.svg#webfont') format('svg');
    }
 @font-face {
     font-family: "Aeonik";
     font-weight: 500;
-    src: url("@font/Aeonik-Medium.woff") format("woff"),
+    src: url('@font/Aeonik-Medium.eot');
+	src: url('@font/Aeonik-Medium.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Aeonik-Medium.woff') format('woff'),
+	     url('@font/Aeonik-Medium.ttf') format('truetype'),
+	     url('@font/Aeonik-Medium.svg#webfont') format('svg');
    }
 @font-face {
     font-family: "Gatwick";
     font-weight: 700;
-    src: url("@font/Gatwick-Bold.woff") format("woff"),
+    src: url('@font/Aeonik-Bold.eot');
+	src: url('@font/Aeonik-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Aeonik-Bold.woff') format('woff'),
+	     url('@font/Aeonik-Bold.ttf') format('truetype'),
+	     url('@font/Aeonik-Bold.svg#webfont') format('svg');
 }
 @font-face {
     font-family: "Gatwick";
     font-weight: 800;
-    src: url("@font/Gatwick-Ultrabold.woff") format("woff"),
+    src: url('@font/Gatwick-Bold.eot');
+	src: url('@font/Gatwick-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('@font/Gatwick-Bold.woff') format('woff'),
+	     url('@font/Gatwick-Bold.ttf') format('truetype'),
+	     url('@font/Gatwick-Bold.svg#webfont') format('svg');
 }   
 :root{
     --contactme : #FBDC33;
