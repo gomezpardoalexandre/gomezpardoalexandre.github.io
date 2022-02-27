@@ -1,41 +1,58 @@
-(() => {
-    let $ = c.getContext("2d"),
-        w = (c.width = window.innerWidth),
-        h = (c.height = window.innerHeight),
-        pi2 = Math.PI * 2,
-        random = t => Math.random() * t,
-        binRandom = t => Math.random() < t;
-    
-    let arr = new Array(200 /* amount */).fill().map(p=>{
-        return {
-            p: {x: random(w), y: random(h) }, //position
-            v: { //velocity
-                x: binRandom(0.1)? random(1) : random(-1),
-                y: binRandom(0.1)? random(1) : random(-1)
-            },
-            s: random(1)+0.2, //size
-            o: random(0.5)+.3 //opacity
+
+        const $bigBall = document.querySelector(".cursor__ball--big");
+        const $smallBall = document.querySelector(".cursor__ball--small");
+        const $hoverables = document.querySelectorAll(".hoverable");
+
+        // Listeners
+        document.body.addEventListener("mousemove", onMouseMove);
+        for (let i = 0; i < $hoverables.length; i++) {
+        $hoverables[i].addEventListener("mouseenter", onMouseHover);
+        $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
         }
-    })
+
+        // Move the cursor
+        function onMouseMove(e) {
+        TweenMax.to($bigBall, 0.4, {
+            x: e.clientX - 15,
+            y: e.clientY - 15
+        });
+        TweenMax.to($smallBall, 0.1, {
+            x: e.clientX - 5,
+            y: e.clientY - 7
+        });
+        }
+
+        // Hover an element
+        function onMouseHover() {
+        TweenMax.to($bigBall, 0.3, {
+            scale: 4
+        });
+        }
+        function onMouseHoverOut() {
+        TweenMax.to($bigBall, 0.3, {
+            scale: 1
+        });
+        }
+
+     /* const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        console.log(prefersDarkScheme.matches);
+            if (prefersDarkScheme.matches == true) {
+              
+                document.documentElement.style.cssText = "--base: #2E1E08; --accent: #FFF7EB; --background: #1F1201";
+            } else {
+                document.documentElement.style.cssText = "--base: #FBDC33";
+                document.documentElement.style.cssText = "--accent: #296E5D";
+            }
+        */
+            var trig2 =  document.getElementById('trigger2'); 
+            var reveal2 = document.getElementById('reveal2');
     
-    function draw(){
-      $.fillStyle="#fff";
-      $.fillRect(0,0,w,h);
-      
-      arr.forEach(p=>{
-        p.p.x+=p.v.x;
-        p.p.y+=p.v.y;
-        if(p.p.x > w || p.p.x < 0) p.v.x *=-1;
-        if(p.p.y > h || p.p.y < 0) p.v.y *=-1;
-        $.beginPath();
-        $.arc(p.p.x,p.p.y,p.s,0,pi2);
-        $.closePath();
-        $.fillStyle = "rgba(0, 0, 0,"+p.o+")";
-        $.fill();
-      })
-      
-      requestAnimationFrame(draw);
-    }
-    draw(); 
-  
-  })();
+            trig2.addEventListener('mouseover', function(){
+                reveal2.style.display = "flex";
+            }, false);
+            reveal2.addEventListener('mouseover', function(){
+                reveal2.style.display = "flex";
+            }, false);
+            trig2.addEventListener('mouseleave', function(){
+                reveal2.style.display = "none";
+            }, false);

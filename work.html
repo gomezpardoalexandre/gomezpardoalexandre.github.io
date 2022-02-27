@@ -1,112 +1,279 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta auteur="Gomez Pardo Alexandre">
-<title>Alex's</title>
-<link href="style.css" rel="stylesheet">
-<link href="work.css" rel="stylesheet">
-<link rel="icon" href="@img/logofavicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="projets.css"
+        rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet">    
+    <style>
+        ::selection {
+            background: #000000;
+            color: #FFFFFF;
+            text-shadow: none;
+        }
+    </style>
+    <style>
+        .nav-link__contain,
+        .sublink__contain {
+            opacity: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="background">
-        <img src="@img/background.svg">
-        <canvas id=c></canvas>
-    </div>
-    <div class="menu">
-        <p><a href="index.html">accueil</a></p>
-        <p><a href="about.html">à propos</a></p>
-    </div>
-    <div class="logo2"><a href="index.html">
-        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="282.2" height="280.08" viewBox="0 0 282.2 280.08"><defs><style>.cls-1{fill:var(--accent);}</style></defs><polygon class="cls-1" points="31.73 5.99 7.03 5.99 7.03 103.9 31.73 103.9 31.73 68.47 128.73 68.47 128.73 43.22 31.73 43.22 31.73 5.99"/><polygon class="cls-1" points="178.31 78.34 178.31 5.99 152.73 5.99 152.73 103.9 275.16 103.9 275.16 78.34 178.31 78.34"/><rect class="cls-1" x="7.19" y="249.2" width="121.55" height="24.7"/><rect class="cls-1" x="7.19" y="127.41" width="121.55" height="25.49"/><rect class="cls-1" x="19.68" y="187.81" width="93.14" height="26.7"/><polygon class="cls-1" points="143.72 135.95 254.34 274.09 274.63 256.75 164.01 118.61 143.72 135.95"/></svg>
-    </a>
-    </div>
-    <div class="worklist">
-        <p>Projets</p>
-        <ul id="list">
-            <!--<li><a href="projet-idgraphique.html">Identité graphique</a></li>-->
-            <li class="3D"><a href="projet-safeplace.html">Safe Place</a></li>
-            <li class="3D"><a href="projet-pcr.html">Le petit chaperon rouge</a></li>
-            <li class="3D Jeux"><a href="projet-ostara.html">Ostara</a></li>
-            <li class="3D"><a href="projet-ikea.html">Ikea</a></li>
-            <li class="UI/UX"><a href="projet-chatbox.html">Chatbox</a></li>
-            <li class="Jeux"><a href="projet-breakout.html">BreakOut</a></li>
-            <li class="UI/UX Motion"><a href="projet-cci.html">CCI</a></li>
-            <li class="Motion"><a href="projet-monsterinthelight.html">Monster in the light</a></li>
-            <li class="Vidéo"><a href="projet-coule.html">Coule</a></li>
-            <li class="3D"><a href="projet-experimentation.html">Expérimentation</a></li>
-        </ul>
-    </div>
-    <div class="filter" >
-        <p id="categorie"><a>Catégories</a></p>
-        <div class="filtres" id="filtres">
-            <p>UI/UX</p>
-            <p>Motion</p>
-            <p>Jeux</p>
-            <p>3D</p>
-            <p>Vidéo</p>
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
+        
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script>
-        var categorie = document.getElementById("categorie");
-        var  filtre = document.getElementById("filtres");
-        var liste = document.getElementById('list').children;
-        var click = 0;
-        
-        categorie.addEventListener('click', function(){
-           
-           if (click%2 == 0) {
-            filtre.style.maxHeight = filtre.scrollHeight + "px"; 
-            for (var i= 0; i< liste.length; i++){
-                liste[i].style.opacity=0.5;
-            }
-            }else{
-                filtre.style.maxHeight = null;
-                for (var i= 0; i< liste.length; i++){
-                liste[i].style.opacity=1;
-            }    
-            } 
-            click += 1;
-        })
-        let p = filtre.children;
-        console.log(p)
-        for (var i = 0; i < p.length; i++) {
-            let cat;
-            let click=0;
-            var array = [];
-            p[i].addEventListener('click', function(){
-                this.style.opacity = 1; 
-                this.style.color = 'var(--accent)';
-                array.push(this.innerHTML);
-                if (click%2 != 0){
-                this.style.opacity = 0.5; 
-                this.style.color = '#333333';
-                array = array.filter((n) => {return n != this.innerHTML});
-               //     if (array.length ==0){
-               //         for (var i= 0; i< liste.length; i++){
-                //            liste[i].style.opacity=0.5;
-                //        }
-                //    }
-                }
-                for (var k= 0; k< liste.length; k++){
-                           liste[k].style.opacity=0.5;
-                }
-                console.log(array);
-                console.log(array.length)
-                for (var j= 0; j < array.length; j++){
-                console.log(array[j])
-                let cat = document.getElementsByClassName(array[j]); 
-                console.log(cat);
-                    for (var h=0; h <cat.length; h++){
-                        console.log(cat[h])
-                        cat[h].style.opacity = 1;
-                    }
-                }
-              
-                click +=1; 
-            })
+    <!---------------cursor-->
+    <div  class="navp">
+        <p><a class="hoverable" href="index.html">home</a></p>
+        <p><a class="hoverable" href="store.html">store</a></p>
+        <div id="trigger2" style="display:inline"><p><a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">contact me</a> </p>
+            <div class="rs" style=" right: 3%;" id="reveal2">
+                <p><a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">e-mail</a></p>
+                <hr>
+                <div><a class="hoverable" href="https://www.instagram.com/gomezpardo_alex/" target="_blank"><img src="@img/@icons/instagram.svg"></a></div>
+                <hr>
+                <div><a class="hoverable" href="https://twitter.com/AlexGmzP" target="_blank"><img src="@img/@icons/twitter.svg"></a></div>
+                <hr>
+                <div><a class="hoverable" href="https://medium.com/@flipando" target="_blank"><img src="@img/@icons/medium.svg"></a></div>
+            </div>  
+        </div>
+    </div>
+ 
+    <div class="overflow">
+        <section class="section is--slider">
+            <div class="slider__wave w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 804 50.167"
+                    enable-background="new 0 0 804 50.167" xml:space="preserve">
+                    <path fill="#FFF7EB"
+                        d="M804,0v16.671c0,0-204.974,33.496-401.995,33.496C204.974,50.167,0,16.671,0,16.671V0H804z" />
+                </svg></div>
+            <div class="container is--slider">
+                <div class="splide">
+                    <div class="splide__track w-dyn-list">
+                        <div role="list" class="splide__list w-dyn-items">
+
+
+                            <div title="My piece of the pie" tags="web, video game, 3D" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="mypieceofthepie.html"><img
+                                src="@img/mapartdugateau/visu_1.png"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+                            <div title="Safe Place" tags="web, 3D" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="safeplace.html"><img
+                                    src="@img/safeplace/4.png"
+                                    loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 70% 50%;"
+                                    class="splide__img" /></a></div>
+
+                             <div title="Little Red riding hood" tags="app, storytelling, 3D" role="listitem" class="hoverable splide__slide w-dyn-item">
+                                 <a href="redlittlehood.html"><img
+                                        src="@img/pcr/visual.png"
+                                        loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                        class="splide__img" /></a>
+                             </div>
+
+                             <div title="Ostara" tags="video game, 3D" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="ostara.html"><img
+                                src="@img/ostara/affiche_strip.jpg"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+                             <div title="Motion gallery" tags="motion design" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="motiondesign.html"><img
+                                src="@img/motion.png"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+                             <div title="Ikea" tags="3D, poster" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="ikea.html"><img
+                                src="@img/ikea/ikea.jpeg"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+                             <div title="Chatbox" tags="interface, web" role="listitem" class="hoverable splide__slide w-dyn-item"><a href=""><img
+                                src="@img/chatbox/boxchat-0.jpg"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+                             <div title="Lab" tags="experimentation and fun" role="listitem" class="hoverable splide__slide w-dyn-item"><a href="lab.html"><img
+                                src="@img/experimentation/bubble_v1.png"
+                                loading="lazy" alt="" sizes="(max-width: 767px) 88vw, 30vw" style="object-position: 50% 100%;"
+                                class="splide__img" /></a>
+                             </div> 
+
+
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__wave is--bottom w-embed"><svg version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 804 50.167" enable-background="new 0 0 804 50.167" xml:space="preserve">
+                    <path fill="#FFF7EB"
+                        d="M804,0v16.671c0,0-204.974,33.496-401.995,33.496C204.974,50.167,0,16.671,0,16.671V0H804z" />
+                </svg></div>
+            <div class="controls">
+                <a  href="#"
+                    class="control prev-splide w-inline-block">
+                    <div class="control__fill"></div>
+                    <div class="control__arrow w-embed"><svg version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 24 18">
+                            <path fill="currentColor" d="M23.999,8H5.481c5.009-2.91,6.349-7.311,6.416-7.548L9.976-0.102C9.9,0.156,8.03,6.213-0.073,8.024L0.146,9
+        l-0.218,0.976C8.03,11.787,9.9,17.844,9.976,18.101l1.922-0.554C11.83,17.31,10.49,12.91,5.481,10h18.518V8z" />
+                        </svg></div>
+                </a><a href="#" class="control next-splide w-inline-block">
+                    <div class="control__fill"></div>
+                    <div class="control__arrow is--flipped w-embed"><svg version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 24 18">
+                            <path fill="currentColor" d="M23.999,8H5.481c5.009-2.91,6.349-7.311,6.416-7.548L9.976-0.102C9.9,0.156,8.03,6.213-0.073,8.024L0.146,9
+        l-0.218,0.976C8.03,11.787,9.9,17.844,9.976,18.101l1.922-0.554C11.83,17.31,10.49,12.91,5.481,10h18.518V8z" />
+                        </svg></div>
+                </a></div>
+        </section>
+
+    </div>
+    <a href="index.html"><img class="hoverable" id="logo" src="@img/logoalex.svg"></a>
+
+    <div class="infos">
+        <h2 id="titre">Titre</h2>
+        <p id="tag">tag</p>
+    </div>
+
+ 
+
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6067559c86540cc17e19c4d5"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://assets.website-files.com/6067559c86540cc17e19c4d5/js/tricks-menu-slider.8dd051c35.js"
+        type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <style>
+        .splide__arrow.splide__arrow--next,
+        .splide__arrow.splide__arrow--prev,
+        .splide__pagination {
+            display: none;
         }
-     
+
+        .splide *:focus {
+            outline: none;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            perPage: 3,
+            perMove: 1,
+            type: 'loop',
+            focus: 'center',
+            breakpoints: {
+                767: {
+                    perPage: 1,
+                }
+            }
+        }).mount();
+
+        $('.next-splide').click(function () {
+            $('.splide__arrow.splide__arrow--next').click();
+        });
+
+        $('.prev-splide').click(function () {
+            $('.splide__arrow.splide__arrow--prev').click();
+        });
     </script>
+
+    <script>
+        $('.splide__list, .trigger').hover(function () {
+            $('.cursor__dot1').toggleClass('is--larger');
+            $('.cursor__dot2').toggleClass('is--larger');
+        });
+
+        $('.trigger').mouseenter(function () {
+            $('.cursor__text').text('OPEN');
+        });
+
+        $('.trigger').mouseleave(function () {
+            $('.cursor__text').text('DRAG');
+        });
+
+        $('.control').hover(function () {
+            $('.cursor__dot1').toggleClass('opacity-0');
+            $('.cursor__dot2').toggleClass('light-ring');
+        });
+
+        $('.trigger').click(function () {
+            $('.cursor').toggleClass('hide-cursor');
+        });
+
+        $('.trigger').click(function () {
+            $('body').toggleClass('overflow-hidden');
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Fade Up Animation
+        var fadeUp = anime.timeline({
+            loop: false,
+            autoplay: false,
+        });
+
+        fadeUp
+            .add({
+                targets: '.nav-link__contain, .sublink__contain',
+                translateY: [300, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 0 + 150 * i
+            });
+        // Play animaton when something is clicked
+        $(".trigger").click(function () {
+            setTimeout(() => {
+                fadeUp.restart();
+            }, 300);
+        });
+
+    </script>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script>
+        const interval = setInterval(function() {
+
+            var elm = document.getElementsByClassName('is-visible')[0];
+
+            var title = elm.getAttribute('title');
+            var tag = elm.getAttribute('tags');
+      
+
+            document.getElementById('titre').innerHTML = title;
+            document.getElementById('tag').innerHTML = tag; 
+          
+        }, 100);
+    </script>
+
 </body>
+
 </html>

@@ -2,51 +2,113 @@
 <html>
 <head>
 <meta auteur="Gomez Pardo Alexandre">
-<meta name ="description" content = "Portfolio d'Alexandre Gomez Pardo, designer graphique interactif et étudiant en Master Design et Management de l'Innovation Interactive, aux Gobelins">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Alex's</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Alex</title>
 <link href="style.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
 <link rel="icon" href="@img/logofavicon.ico" />
 </head>
-<body style="height: 100vh; overflow: hidden;">
-    <div class="height:100vh; overflow-x:hidden; overflow-y:hidden">
-    <div class="background">
-       <img src="@img/background.svg">
-      <canvas id=c></canvas>
-    </div>
-    <div class="menu">
-        <p><a href="work.html">projets</a></p>
-        <p><a href="about.html">à propos</a></p>
-    </div>
-    <div class="logo">
-        <div class="background-logo"></div>
-        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="282.2" height="280.08" viewBox="0 0 282.2 280.08"><defs><style>.cls-1{fill:#fff;}</style></defs><polygon class="cls-1" points="31.73 5.99 7.03 5.99 7.03 103.9 31.73 103.9 31.73 68.47 128.73 68.47 128.73 43.22 31.73 43.22 31.73 5.99"/><polygon class="cls-1" points="178.31 78.34 178.31 5.99 152.73 5.99 152.73 103.9 275.16 103.9 275.16 78.34 178.31 78.34"/><rect class="cls-1" x="7.19" y="249.2" width="121.55" height="24.7"/><rect class="cls-1" x="7.19" y="127.41" width="121.55" height="25.49"/><rect class="cls-1" x="19.68" y="187.81" width="93.14" height="26.7"/><polygon class="cls-1" points="143.72 135.95 254.34 274.09 274.63 256.75 164.01 118.61 143.72 135.95"/></svg>
-    </div>
-    <div class="contact">
-        <div class="background-contact"></div>
-        <p><a href="mailto:gomezpardo.alexandre@gmail.com">contact me</a></p>
-    </div>
-    <div class="copyright">
-        <p>© 2021 Alex</p>
-    </div>
-    <div class="video">
-        <video width="900" height="100%" autoplay loop muted playsinline>
-            <source src="@video/0016-0154_2-1.mov" type='video/mp4; codecs="hvc1"'>
-            <source src="@video/0016-0154.webm" type="video/webm">
-            </video>    
-    </div>
-</div>
-    <script src="script.js"></script>
-    <script>
-        
-       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+<body >
 
-            if (prefersDarkScheme.matches && btn === ok) {
-                document.documentElement.style.cssText = "--base: #5AFFB0; --accent: #5AFFB0; --background: #000000";
-            } else {
-                document.documentElement.style.cssText = "--base: #FBDC33";
-                document.documentElement.style.cssText = "--accent: #296E5D";
-            }
+
+    <!---------------cursor-->
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
+        
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+    </div>
+    <!---------------cursor-->
+    <div class="navigation">
+        <p><a class="hoverable" href="work.html">works</a></p>
+        <p><a class="hoverable" href="store.html">store</a></p>
+        <div id="trigger2" style="display:inline"><p><a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">contact me</a> </p>
+            <div class="rs" id="reveal2">
+                <p><a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">e-mail</a></p>
+                <hr>
+                <div><a class="hoverable" href="https://www.instagram.com/gomezpardo_alex/" target="_blank"><img src="@img/@icons/instagram.svg"></a></div>
+                <hr>
+                <div><a class="hoverable" href="https://twitter.com/AlexGmzP" target="_blank"><img src="@img/@icons/twitter.svg"></a></div>
+                <hr>
+                <div><a class="hoverable" href="https://medium.com/@flipando" target="_blank"><img src="@img/@icons/medium.svg"></a></div>
+            </div>  
+        </div>
+    </div>
+  
+    <div id="yellow">    
+
+        <div class="body" style="height: 96vh; overflow: hidden;">
+
+            <div class="title">
+                <h1 id="f">Alex</h1>
+                <p><span class="hoverable" id="trigger">interactive</span> and graphic design</p>
+                <p id="reveal">Creating interactive and immersive experience on digital device, from UX design to art direction with a little dabbling in web developpement</p>
+            </div>
+            <div class="rs_mobile">
+                <p><a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">e-mail</a></p>
+              
+                <a class="hoverable" href="https://www.instagram.com/gomezpardo_alex/" target="_blank"><img src="@img/@icons/instagram.svg"></a>
+               
+                <a class="hoverable" href="https://twitter.com/AlexGmzP" target="_blank"><img src="@img/@icons/twitter.svg"></a>
+                
+                <a class="hoverable" href="https://medium.com/@flipando" target="_blank"><img src="@img/@icons/medium.svg"></a>
+            </div>  
+            <div class="img" style="background-image: url('@img/inside_home.jpg');">
+                <img id="logo1" src="@img/logo_1.svg">
+            </div>
+            <div class="copyright">
+                <p>© 2022 Alex</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body" id="blue" style="min-height: 100vh; overflow: hidden;">
+
+        <div class="img2" style="background-image: url('@img/inside_home_2.png');">
+        
+        </div>
+        <div class="presentation">
+            <h2 id="s">About me</h2>
+            <p>I'm a 23 years old graphic designer based in Paris, France. Specialized in artistic direction and interactive design, I'm passionate about creating meaningful interfaces, that make the user's experience seamless.</p>
+            <p>Throughout my journey in the wonderful world of graphic design, I've learned to associate my interest for design, human psychology and digital techniques in order to manufacture immersive experience. My curisoity is as vast as the digital world, I'm always fascinated by new technology and trying to explore the ins and outs of graphic design on every plateform. From video games to website, without forgetting motion design, I enjoy the freedom of creating polished expericence centered on the end user.</p>
+            <p>Inspired by interior design, fashion design and having a soft spot for science matters, I find myself the lucky owner of two prickly cactus, Billy and Bob, and a overflowing wardrobe.</p>
+            <p>You can find me on my social network, my dms are always open, or contact me <a class="hoverable" href="mailto:alex.interactivedesign@gmail.com?subject=Hello Alex !">by e-mail</a></p>
+            <img id="logo2" src="@img/logo_2.svg">
+        </div>
+    </div>
+
+
+
+
+    <script>
+        		var sections = ["yellow", "blue"];
     </script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+      
+        var trig = document.getElementById('trigger'); 
+        var reveal = document.getElementById('reveal');
+
+        trig.addEventListener('mouseover', function(){
+            reveal.style.opacity = "0.6";
+        }, false);
+        trig.addEventListener('mouseleave', function(){
+            reveal.style.opacity = "0";
+        }, false);
+
+       
+
+    </script>
+    
 </body>
 </html>
