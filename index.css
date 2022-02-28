@@ -177,6 +177,7 @@
     .img2{
         width: 100%;
         display: none;
+        top: -90%;
     }
     #logo1{
         display: none;
