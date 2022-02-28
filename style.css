@@ -11,17 +11,17 @@ html{
 @font-face {
     font-family: "Quanty";
     font-weight: 400;
-    src: url("@font/Quanty.woff2") format('woff2'),
+    src: url("./@font/Quanty.woff2") format('woff2');
    }
 @font-face {
     font-family: "Gatwick";
     font-weight: 500;
-    src: url("@font/Gatwick-Medium.woff") format('woff2'),
+    src: url("./@font/Gatwick-Medium.woff") format('woff');
 }
 @font-face {
     font-family: "Gatwick";
     font-weight: 100;
-    src: url("@font/Gatwick-Light.woff") format('woff2'),
+    src: url("./@font/Gatwick-Light.woff") format('woff');
 }   
 :root{
     --contactme : #FBDC33;
