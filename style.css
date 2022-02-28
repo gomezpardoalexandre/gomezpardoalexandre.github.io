@@ -41,6 +41,7 @@ body{
     max-width: 1920px;
     margin: 0 auto;
     position: relative; 
+    min-height: 800px;
 }
 a{
     text-decoration: none;
