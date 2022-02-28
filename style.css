@@ -154,7 +154,7 @@ body .cursor__ball circle {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 48%;
+    width: 60%;
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
