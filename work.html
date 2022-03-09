@@ -262,7 +262,8 @@
     <script>
         const interval = setInterval(function() {
 
-            var elm = document.getElementsByClassName('is-visible')[1];
+            var elm = document.getElementsByClassName('is-active')[1];
+            console.log(elm)
 
             var title = elm.getAttribute('title');
             var tag = elm.getAttribute('tags');
