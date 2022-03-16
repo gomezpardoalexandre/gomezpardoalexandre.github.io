@@ -188,4 +188,10 @@ a span, .next p span{
         height: 40vh;
         min-height: 200px;
     }
+    .body{
+        width:90%;
+    }
+    .text-full{
+        margin:0;
+    }
 }
