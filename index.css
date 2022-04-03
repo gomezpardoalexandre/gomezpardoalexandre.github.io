@@ -92,7 +92,11 @@
     margin-left: 42%;
     margin-top: -8%;
 }
-
+.arrow{
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+}
 
 @media screen and (max-width:1024px) {
     .img{
