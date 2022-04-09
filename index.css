@@ -90,7 +90,7 @@
     position: absolute;
     width: 15%;
     margin-left: 42%;
-    margin-top: -8%;
+    margin-top: -160px;
 }
 .arrow{
     position: absolute;
@@ -139,7 +139,7 @@
     }
     .img2{
         width: 69%;
-        top: -70%;
+        top: -60%;
         right: 50%;
         transform: translateX(50%);
         min-width: 320px;
@@ -172,6 +172,16 @@
     .presentation {
         margin-top: 80%;
         margin-bottom: 10%;
+    }
+}
+@media screen and (max-width:600px) {
+    .img2{
+        width: 69%;
+        top: -65%;
+        right: 50%;
+        transform: translateX(50%);
+        min-width: 320px;
+        background-position: 50% 200px;
     }
 }
 @media screen and (max-width:500px) {

@@ -44,6 +44,7 @@
    .container.is--slider {
      padding-top: 0em;
      padding-bottom: 0em;
+     max-height: 63.1vh;
    }
    
    .section.is--slider {
