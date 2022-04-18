@@ -173,9 +173,10 @@ a span, .next p span{
     }
     .row.reverse{
         flex-direction: column-reverse;
+        align-items: center;
     }
     .text-right, .text-left{
-        width: 100%;
+        width: 90%;
     }
     
     .row{
@@ -185,7 +186,7 @@ a span, .next p span{
         height: 40vh;
         min-height: 200px;
     }
-    .w-60, .w-40{
+    .w-60{
         width: 100%;
     }
     .gallery .w-50,  .gallery .w-30,  .gallery .w-40{
