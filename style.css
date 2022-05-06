@@ -11,7 +11,7 @@ html{
 @font-face {
     font-family: "Quanty";
     font-weight: 400;
-    src: url("./@font/Quanty.woff2") format('woff2');
+    src: url("./@font/Telegraf.woff") format('woff2');
    }
 @font-face {
     font-family: "Gatwick";
