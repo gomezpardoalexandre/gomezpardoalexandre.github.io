@@ -174,7 +174,7 @@ a span, .next p span{
         font-size: 3rem;
     }
     .row{
-        flex-direction: column;
+        flex-direction: row;
     }
     .row.reverse{
         flex-direction: column-reverse;
@@ -183,7 +183,6 @@ a span, .next p span{
     .text-right, .text-left{
         width: 90%;
     }
-    
     .row{
         width: 90%;
     }
