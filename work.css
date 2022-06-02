@@ -285,6 +285,21 @@
        z-index: 20;
    }
 
+   .mobiledisplay{
+     margin-top: 80px;
+   }
+   .mobilemenu{
+     margin: 0 5%;
+     margin-bottom: 20px;
+   }
+   .mobilemenu img{
+     object-fit: cover;
+     border-radius: 10px;
+     height: 180px;
+     width: 100%;
+     filter:drop-shadow(1px 4px 10px rgba(0, 0, 0, 0.4))
+   }
+
 @media screen and (max-width:1024px) {
         .controls{
            bottom:-8%;

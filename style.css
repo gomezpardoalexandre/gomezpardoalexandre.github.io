@@ -161,6 +161,7 @@ body .cursor__ball circle {
     transform: translateX(-50%);
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 247, 235, 0.6);
     padding: 8px;
     border-radius: 8px;
@@ -173,4 +174,31 @@ body .cursor__ball circle {
     max-width: 30px;
     height: 30px;
 }
-
+@media screen and (min-width:600px) {
+    .mobiledisplay{
+        display: none;
+    }
+    .mobilehidden{
+        display : block;
+    } 
+}
+@media screen and (max-width:600px) {
+    .mobilehidden{
+        display : none;
+    } 
+    .mobiledisplay{
+        display: block;
+    }
+    .navigation, .navp{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        background: rgba(255, 247, 235, 1);
+    }
+    .copyright{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+}
