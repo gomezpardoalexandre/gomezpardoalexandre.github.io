@@ -191,7 +191,7 @@ body .cursor__ball circle {
     }
     .navigation, .navp{
         text-align: center;
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
         float: none;
         background: rgba(255, 247, 235, 1);
