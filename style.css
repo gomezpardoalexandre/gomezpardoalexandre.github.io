@@ -95,10 +95,10 @@ p{
     cursor: pointer;
 }
 /* cursor */
-body .cursor {
+/*body .cursor {
     pointer-events: none;
     animation: fadein 0.5s;
-  }
+  }*/
 body .cursor__ball {
     position: fixed;
     top: 0;
